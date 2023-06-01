@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syrah Suites & Studios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Castoro:ital@0;1&family=Comfortaa:wght@300;400;500;700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"></head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav>
+                        <ul class="header__nav">
+                            <li><a class="navbar-brand header__nav" href="pages/suites.html">SUITES</a></li>
+                            <li><a class="navbar-brand header__nav" href="pages/studios.html">STUDIOS</a></li>
+                            <img class="header__logo" src="images/logopng.png" alt="logo">
+
+                            <li><a class="navbar-brand header__nav" href="pages/spa.html">SPA</a></li>
+                            <li><a class="navbar-brand header__nav" href="pages/contacto.html">CONTACTO</a></li>
+                        </ul>
+
+                    </div>
+                    </nav>
+                        <!-- <nav class="header__menu">
+                        <ul class="header__nav">
+                            <li><a class="header__nav" href="pages/suites.html">SUITES</a></li>
+                            <li><a class="header__nav" href="pages/studios.html">STUDIOS</a></li>
+                            <li><a class="header__nav" href="pages/spa.html">SPA</a></li>
+                            <li><a class="header__nav" href="pages/contacto.html">CONTACTO</a></li>
+                        </ul>
+                        <img class="header__logo" src="images/logopng.png" alt="logo">
+                    </nav> -->
+
+                </div>
+            </div>
+                <div class="col-md-12">    
+                    <div class="header__disponibilidad">
+                        <label class="header__disponibilidad" for="edificio"></label>
+                        <select class="header__boton" name="edificio" id="edificio">
+                            <option value="Suites">Syrah Suites</option>
+                            <option value="Studios">Syrah Studios</option>
+                        </select>
+                        <label class="header__disponibilidad" for="checkin"></label>
+                        <input class="header__boton" type="date" name="checkin" id="checkin" >
+                        <label class="header__disponibilidad" for="checkout"></label>
+                        <input class="header__boton" type="date" name="checkout" id="checkout">
+                        <input class="header__boton" type="button" value="Buscar disponibilidad">
+                    </div>
+                </div>    
+                    <div class="header__video">
+                        <video width="1980" height="920" autoplay muted>
+                            <source src="images/suitesreel.mp4" type="video/mp4">7
+                        </video>
+                    </div>
+            
+        </header>
+
+        <!-- MAIN SUITES/STUDIOS-->
+        <main>
+            <h1 class="fraseppal">Ubicados en el corazón de Palermo, centro turístico, comercial y cultural del país.</h1>
+            <div class="suites">
+                <hr class="lineasuites">
+                <h2 class="h2suites">SYRAH SUITES</h2>
+                <p class="psuites">Se encuentra a 700 metros de la plaza Serrano y a 1 km de Plaza Italia. Este complejo de apartamentos ofrece una piscina al aire libre en la terraza, servicios de conserjería y conexión wifi gratuita. Los apartamentos cuentan con balcón con vista a la ciudad.</p>
+                <img class="foto" src="images/DSC_0021.JPG" alt="Syrah Suites portada">
+                <a href="pages/suites.html"><input class="descubrir" type="button" value="DESCUBRIR!"></a>
+            </div>
+            <hr id="verticallargo">
+            <hr id="verticalcorto">
+            <div class="studios">
+                <img class="foto" src="images/001.jpg" alt="Syrah Studios portada">
+                <hr class="lineastudios">
+                <h2 class="h2studios">SYRAH STUDIOS</h2>
+                <p class="pstudios">Se encuentra a 500 metros de la plaza Serrano y a 1 km de Plaza Italia. Este complejo de apartamentos ofrece un jardin y piscina al aire libre, servicios de conserjería y conexión wifi gratuita.</p>
+                <a href="pages/studios.html"><input class="descubrir" type="button" value="DESCUBRIR!"></a>
+            </div>
+        </main>
+
+        <!-- SOBRE NOSOTROS -->
+        <section class="sobrenosotros">
+            <hr id="horizontallargo">
+            <hr id="horizontalcorto">
+            <hr id="verticallargo2">
+            <hr id="verticalcorto2">
+            <img class="imgsobrenos" src="images/Suites.jpg" alt="Syrah Suites portada">
+            <h2 class="hsobrenos">SOBRE NUESTROS APARTAMENTOS.</h2>
+            <p class="psobrenos">En Syrah Suites & Studios vas a vivir una experiencia única, llena de buenos momentos en un ambiente exclusivo y elegante.Todos los departamentos disponen de cocina, heladera, microondas, wifi sin cargo y televisor de pantalla plana con canales por cable, el baño privado está totalmente equipado con bidet y artículos de aseo gratuitos. Los departamentos se entregan con sabanas y toallones.</p>
+            <hr id="horizontallargo2">
+            <hr id="horizontalcorto2">
+        </section>
+
+        <!-- SPA -->
+        <section class="spa">
+            <h3 id="titulospa">VENI A DISFRUTAR Y RELAJARTE EN NUESTRO SPA</h3>
+            <p id="textospa">Nuestro exclusivo spa cuenta con todo lo necesario para que salgas renovado, envianos un mensaje a través de wsp y enterate de todas las promociones de este increíble espacio, pensado para tu reláx.</p>
+            <a href="pages/spa.html"><input class="botonspa" type="button" value="Conocer más"></a>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <hr class="lineafooter">
+            <div class="informacion">
+                <img class="logofooter" src="images/logopng.png" alt="logo">
+                <h4> Syrah Suites & Studios</h4>
+                <p>Suites: Humboldt 1885, Palermo Hollywood</p>
+                <p>Studios: Godoy Cruz 1655, Palermo Soho</p>
+                <p>reservas@syrahsuites.com</p>
+                <p>Teléfono: +(54 11) 4774 3263</p>
+                <p>Whatsapp: +(54 9) 11 3134 0061</p>
+            </div>
+            <div class="newsletter">
+                <h4>Newsletter</h4>
+                <form class="formularionews" action="">
+                    <label for="nombre">Nombre:</label>
+                    <input class="inputfooter" type="text" name="nombre" id="nombre">
+                    <label for="mail">Correo:</label>
+                    <input class="inputfooter" type="email" name="mail" id="mail">      
+                    <input class="botonfooter" type="submit" value="Suscribirse">
+                </form>
+            </div>
+            <div class="redes">
+                <img class="positionredesfb" src="images/face.png" alt="">
+                <img class="positionredesig" src="images/instagram.png" alt="">
+            </div>
+            <div class="wsp">
+                <img src="images/whatsapp.png" alt="">
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    </div>
+</body>
+</html>
