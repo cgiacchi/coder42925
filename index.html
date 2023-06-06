@@ -16,93 +16,113 @@
     <div class="container-fluid">
         <header>
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-md-12">
                     <nav>
                         <ul class="header__nav">
                             <li><a class="navbar-brand header__nav" href="pages/suites.html">SUITES</a></li>
                             <li><a class="navbar-brand header__nav" href="pages/studios.html">STUDIOS</a></li>
                             <img class="header__logo" src="images/logopng.png" alt="logo">
-
                             <li><a class="navbar-brand header__nav" href="pages/spa.html">SPA</a></li>
                             <li><a class="navbar-brand header__nav" href="pages/contacto.html">CONTACTO</a></li>
                         </ul>
-
-                    </div>
                     </nav>
-                        <!-- <nav class="header__menu">
-                        <ul class="header__nav">
-                            <li><a class="header__nav" href="pages/suites.html">SUITES</a></li>
-                            <li><a class="header__nav" href="pages/studios.html">STUDIOS</a></li>
-                            <li><a class="header__nav" href="pages/spa.html">SPA</a></li>
-                            <li><a class="header__nav" href="pages/contacto.html">CONTACTO</a></li>
-                        </ul>
-                        <img class="header__logo" src="images/logopng.png" alt="logo">
-                    </nav> -->
-
                 </div>
             </div>
-                <div class="col-md-12">    
-                    <div class="header__disponibilidad">
-                        <label class="header__disponibilidad" for="edificio"></label>
-                        <select class="header__boton" name="edificio" id="edificio">
-                            <option value="Suites">Syrah Suites</option>
-                            <option value="Studios">Syrah Studios</option>
-                        </select>
-                        <label class="header__disponibilidad" for="checkin"></label>
-                        <input class="header__boton" type="date" name="checkin" id="checkin" >
-                        <label class="header__disponibilidad" for="checkout"></label>
-                        <input class="header__boton" type="date" name="checkout" id="checkout">
-                        <input class="header__boton" type="button" value="Buscar disponibilidad">
-                    </div>
-                </div>    
-                    <div class="header__video">
-                        <video width="1980" height="920" autoplay muted>
-                            <source src="images/suitesreel.mp4" type="video/mp4">7
-                        </video>
-                    </div>
-            
+            <div class="row">
+                <div class="col-md-12">  
+                    <div class="row"> 
+                        <div class="header__disponibilidad">
+                            <label class="header__disponibilidad" for="edificio"></label>
+                                <select class="header__boton" name="edificio" id="edificio">
+                                    <option value="Suites">Syrah Suites</option>
+                                    <option value="Studios">Syrah Studios</option>
+                                </select>
+                            <label class="header__disponibilidad" for="checkin"></label>
+                                <input class="header__boton" type="date" name="checkin" id="checkin" >
+                            <label class="header__disponibilidad" for="checkout"></label>
+                                <input class="header__boton" type="date" name="checkout" id="checkout">
+                                <input class="header__boton" type="button" value="Buscar disponibilidad">
+                        </div> 
+                        <div class="header__video">
+                            <video source src="images/suitesreel.mp4" autoplay looped muted type="video/mp4"></video>
+                        </div>
+                    </div> 
+                </div>     
+            </div>        
         </header>
-
-        <!-- MAIN SUITES/STUDIOS-->
         <main>
-            <h1 class="fraseppal">Ubicados en el corazón de Palermo, centro turístico, comercial y cultural del país.</h1>
-            <div class="suites">
-                <hr class="lineasuites">
-                <h2 class="h2suites">SYRAH SUITES</h2>
-                <p class="psuites">Se encuentra a 700 metros de la plaza Serrano y a 1 km de Plaza Italia. Este complejo de apartamentos ofrece una piscina al aire libre en la terraza, servicios de conserjería y conexión wifi gratuita. Los apartamentos cuentan con balcón con vista a la ciudad.</p>
-                <img class="foto" src="images/DSC_0021.JPG" alt="Syrah Suites portada">
-                <a href="pages/suites.html"><input class="descubrir" type="button" value="DESCUBRIR!"></a>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="frase">
+                        <h1 class="main__frase">Ubicados en el corazón de Palermo, centro turístico, comercial y cultural del país.</h1>        
+                    </div>
+                </div>
             </div>
-            <hr id="verticallargo">
-            <hr id="verticalcorto">
-            <div class="studios">
-                <img class="foto" src="images/001.jpg" alt="Syrah Studios portada">
-                <hr class="lineastudios">
-                <h2 class="h2studios">SYRAH STUDIOS</h2>
-                <p class="pstudios">Se encuentra a 500 metros de la plaza Serrano y a 1 km de Plaza Italia. Este complejo de apartamentos ofrece un jardin y piscina al aire libre, servicios de conserjería y conexión wifi gratuita.</p>
-                <a href="pages/studios.html"><input class="descubrir" type="button" value="DESCUBRIR!"></a>
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-4">
+                        <div class="main__suites">
+                            <div class="main__tituloYLineaSuites">
+                                <hr class="main__lineaSuites">
+                                <h2 class="main__tituloSuites">SYRAH SUITES</h2>
+                            </div>
+                            <p class="main__parrafoSuites">Se encuentra a 700 metros de la plaza Serrano y a 1 km de Plaza Italia. Este complejo de apartamentos ofrece una piscina al aire libre en la terraza, servicios de conserjería y conexión wifi gratuita. Los apartamentos cuentan con balcón con vista a la ciudad.</p>
+                            <img class="main__imagenSuites" src="images/DSC_0021.JPG" alt="Syrah Suites portada">
+                            <a  class="main__botonDescubrirSuites" href="pages/suites.html"><input type="button" class="main__botonDescubrirSuites" value="DESCUBRIR!"></a>
+                            <hr id="main__lineaVerticalLarga">
+                        </div>
+                </div>    
+                <div class="col-md-4"> 
+                    <div class="main__studios">
+                        <hr id="main__lineaVerticalCorta">
+                        <img class="main__imagenStudios" src="images/001.jpg" alt="Syrah Studios portada">
+                        <div class="main__tituloYLineaStudios">
+                            <h2 class="main__tituloStudios">SYRAH STUDIOS</h2>
+                            <hr class="main__lineaStudios">
+                        </div>
+                            <p class="main__parrafoStudios">Se encuentra a 500 metros de la plaza Serrano y a 1 km de Plaza Italia. Este complejo de apartamentos ofrece un jardin y piscina al aire libre, servicios de conserjería y conexión wifi gratuita.</p>
+                            <a class="main__botonDescubrirStudios" href="pages/studios.html"><input class="main__botonDescubrirStudios" type="button" value="DESCUBRIR!"></a>
+                        </div>
+                </div>
             </div>
         </main>
 
         <!-- SOBRE NOSOTROS -->
-        <section class="sobrenosotros">
-            <hr id="horizontallargo">
-            <hr id="horizontalcorto">
-            <hr id="verticallargo2">
-            <hr id="verticalcorto2">
-            <img class="imgsobrenos" src="images/Suites.jpg" alt="Syrah Suites portada">
-            <h2 class="hsobrenos">SOBRE NUESTROS APARTAMENTOS.</h2>
-            <p class="psobrenos">En Syrah Suites & Studios vas a vivir una experiencia única, llena de buenos momentos en un ambiente exclusivo y elegante.Todos los departamentos disponen de cocina, heladera, microondas, wifi sin cargo y televisor de pantalla plana con canales por cable, el baño privado está totalmente equipado con bidet y artículos de aseo gratuitos. Los departamentos se entregan con sabanas y toallones.</p>
-            <hr id="horizontallargo2">
-            <hr id="horizontalcorto2">
+        <section>
+            <div class="row">
+                <div class="col-md-6">
+                <!-- <hr id="section__lineaHorizontalLarga">
+                <hr id="section__lineaHorizontalCorta">
+                <hr id="section__lineaVerticalLarga">
+                <hr id="section__lineaVerticalCorta"> 
+                <div class="section__sobreNosotros"> -->
+                    <img class="section__imagen" src="images/Suites.jpg" alt="Syrah Suites portada">
+                </div>
+                <div class="col-md-6 section__sobreNosotros">
+                    <h2 class="section__tituloSobreNosotros">SOBRE NUESTROS APARTAMENTOS.</h2>
+                    <p class="section__parrafoSobreNosotros">En Syrah Suites & Studios vas a vivir una experiencia única, llena de buenos momentos en un ambiente exclusivo y elegante.Todos los departamentos disponen de cocina, heladera, microondas, wifi sin cargo y televisor de pantalla plana con canales por cable, el baño privado está totalmente equipado con bidet y artículos de aseo gratuitos. Los departamentos se entregan con sabanas y toallones.</p>
+                </div>
+                <!-- <hr id="section__lineaHorizontalLarga2">
+                <hr id="section__lineaHorizontalCorta2"> -->
+                </div>
+            </div>
         </section>
+    
 
         <!-- SPA -->
-        <section class="spa">
-            <h3 id="titulospa">VENI A DISFRUTAR Y RELAJARTE EN NUESTRO SPA</h3>
-            <p id="textospa">Nuestro exclusivo spa cuenta con todo lo necesario para que salgas renovado, envianos un mensaje a través de wsp y enterate de todas las promociones de este increíble espacio, pensado para tu reláx.</p>
-            <a href="pages/spa.html"><input class="botonspa" type="button" value="Conocer más"></a>
-        </section>
+        <section class="section__spa">
+        <div class="row">
+        <div class="col-md-6">
+            <h3 class="section__tituloSpa">VENI A DISFRUTAR Y RELAJARTE EN NUESTRO SPA</h3>
+            </div>
+            <div class="col-md-6">
+            <p class="section__parrafoSpa">Nuestro exclusivo spa cuenta con todo lo necesario para que salgas renovado, envianos un mensaje a través de wsp y enterate de todas las promociones de este increíble espacio, pensado para tu reláx.</p>
+            <a class="section__moverBotonSpa" href="pages/spa.html"><input class="section__botonSpa" type="button" value="Conocer más"></a>
+        </div>
+        </div>
+    </section>
+
 
         <!-- FOOTER -->
         <footer>
