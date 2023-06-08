@@ -29,7 +29,6 @@ body{
     color:white;
     text-decoration: none;
     margin-top: 10px;
-
 }
 
 .header__logo{
@@ -462,6 +461,40 @@ display: flex;
     bottom: 50px;
     right: 50px;
 }
+
+
+@media (max-width: 576px) {
+    .header__nav{
+        font-size:1rem;
+    }
+    .header__logo{
+        width: 6rem;
+        height: 6rem;
+    }
+    .header__disponibilidad{
+        margin-top: 5rem;
+    }
+    .header__boton{
+        padding: 10px 26px;
+        font-size: 10px;
+    }
+    .main__frase{
+        margin-top:1rem;
+    }
+
+
+    .section__imagen{
+        width: 35rem;
+        justify-content: flex-start;
+    }
+    .section__tituloSobreNosotros{
+        
+    }
+    .section__parrafoSobreNosotros{
+
+    }
+}
+
 
 /* PAGINA SUITES */
 
