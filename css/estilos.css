@@ -193,14 +193,16 @@ a{
     margin-right: 5rem;
     color:#990f0f;
     padding: 15px 32px;
+    text-decoration: none;
     text-align: center;
     font-size: 14px;
     border-radius: 10px;
-    font-weight:900;
-    margin-left:1.5rem;
+    font-weight: bold;
+    margin-left:2.5rem;  
 } 
 
 .main__imagenStudios{
+    margin-top:2rem;
     width: 20rem;
     height:26rem
 }
@@ -340,7 +342,7 @@ a{
     color: black;
 }
 
-.section__moverBotonSpa{
+.section__botonSpa--modifier{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -495,6 +497,10 @@ display: flex;
         margin-left: 0rem;
     }
 
+    .main__botonDescubrirStudios{
+        margin-left: 1.5rem;
+        margin-right: 0rem;
+    }
     .main__studios{
         margin-left: 8rem;
     }
@@ -540,6 +546,10 @@ display: flex;
         margin-left: 2rem;
     }
 
+    .section__botonSpa--modifier{
+        margin-left:2.5rem;
+    }
+
     .footer__logo{
         margin-left:14rem;
     }
@@ -552,7 +562,7 @@ display: flex;
         margin-left:9rem;
     }
     .footer__newsletter{
-        margin-left:10rem;
+        margin-left:12rem;
     }
     .footer__boton{
         margin-left:3rem;
