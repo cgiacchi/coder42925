@@ -21,7 +21,7 @@
                         <ul class="header__nav">
                             <li><a class="navbar-brand header__nav" href="pages/suites.html">SUITES</a></li>
                             <li><a class="navbar-brand header__nav" href="pages/studios.html">STUDIOS</a></li>
-                            <img class="header__logo" src="images/logopng.png" alt="logo">
+                            <li><img class="header__logo header__nav" src="images/logopng.png" alt="logo"></li>
                             <li><a class="navbar-brand header__nav" href="pages/spa.html">SPA</a></li>
                             <li><a class="navbar-brand header__nav" href="pages/contacto.html">CONTACTO</a></li>
                         </ul>
@@ -30,25 +30,23 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">  
-                    <div class="row"> 
-                        <div class="header__disponibilidad">
-                            <label class="header__disponibilidad" for="edificio"></label>
-                                <select class="header__boton" name="edificio" id="edificio">
-                                    <option value="Suites">Syrah Suites</option>
-                                    <option value="Studios">Syrah Studios</option>
-                                </select>
-                            <label class="header__disponibilidad" for="checkin"></label>
-                                <input class="header__boton" type="date" name="checkin" id="checkin" >
-                            <label class="header__disponibilidad" for="checkout"></label>
-                                <input class="header__boton" type="date" name="checkout" id="checkout">
-                                <input class="header__boton" type="button" value="Buscar disponibilidad">
-                        </div> 
-                        <div class="header__video">
-                            <video source src="images/suitesreel.mp4" autoplay looped muted type="video/mp4"></video>
-                        </div>
+                    <div class="header__disponibilidad">
+                        <label class="header__disponibilidad" for="edificio"></label>
+                            <select class="header__boton" name="edificio" id="edificio">
+                                <option value="Suites">Syrah Suites</option>
+                                <option value="Studios">Syrah Studios</option>
+                            </select>
+                        <label class="header__disponibilidad" for="checkin"></label>
+                            <input class="header__boton" type="date" name="checkin" id="checkin" >
+                        <label class="header__disponibilidad" for="checkout"></label>
+                            <input class="header__boton" type="date" name="checkout" id="checkout">
+                            <input class="header__boton" type="button" value="Buscar disponibilidad">
                     </div> 
-                </div>     
-            </div>        
+                    <div class="header__video">
+                        <video  class="header__video--modifier"source src="images/suitesreel.mp4" autoplay looped muted type="video/mp4"></video>
+                    </div> 
+                </div> 
+            </div>     
         </header>
         <main>
             <div class="row">
@@ -62,16 +60,16 @@
                 <div class="col-lg-2">
                 </div>
                 <div class="col-lg-4">
-                        <div class="main__suites">
-                            <div class="main__tituloYLineaSuites">
-                                <hr class="main__lineaSuites">
-                                <h2 class="main__tituloSuites">SYRAH SUITES</h2>
-                            </div>
-                            <p class="main__parrafoSuites">Se encuentra a 700 metros de la plaza Serrano y a 1 km de Plaza Italia. Este complejo de apartamentos ofrece una piscina al aire libre en la terraza, servicios de conserjería y conexión wifi gratuita. Los apartamentos cuentan con balcón con vista a la ciudad.</p>
-                            <img class="main__imagenSuites" src="images/DSC_0021.JPG" alt="Syrah Suites portada">
-                            <a  class="main__botonDescubrirSuites" href="pages/suites.html"><input type="button" class="main__botonDescubrirSuites" value="DESCUBRIR!"></a>
-                            <!-- <hr id="main__lineaVerticalLarga"> -->
+                    <div class="main__suites">
+                        <div class="main__tituloYLineaSuites">
+                            <hr class="main__lineaSuites">
+                            <h2 class="main__tituloSuites">SYRAH SUITES</h2>
                         </div>
+                        <p class="main__parrafoSuites">Se encuentra a 700 metros de la plaza Serrano y a 1 km de Plaza Italia. Este complejo de apartamentos ofrece una piscina al aire libre en la terraza, servicios de conserjería y conexión wifi gratuita. Los apartamentos cuentan con balcón con vista a la ciudad.</p>
+                        <img class="main__imagenSuites" src="images/DSC_0021.JPG" alt="Syrah Suites portada">
+                        <a  class="main__botonDescubrirSuites" href="pages/suites.html"><input type="button" class="main__botonDescubrirSuites" value="DESCUBRIR!"></a>
+                        <!-- <hr id="main__lineaVerticalLarga"> -->
+                    </div>
                 </div>    
                 <div class="col-lg-4"> 
                     <div class="main__studios">
@@ -83,11 +81,12 @@
                         </div>
                             <p class="main__parrafoStudios">Se encuentra a 500 metros de la plaza Serrano y a 1 km de Plaza Italia. Este complejo de apartamentos ofrece un jardin y piscina al aire libre, servicios de conserjería y conexión wifi gratuita.</p>
                             <a class="main__botonDescubrirStudios" href="pages/studios.html"><input class="main__botonDescubrirStudios" type="button" value="DESCUBRIR!"></a>
-                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
                 </div>
             </div>
         </main>
-
         <!-- SOBRE NOSOTROS -->
         <section>
             <div class="row section__sobreNosotros">
@@ -97,7 +96,7 @@
                 <hr id="section__lineaVerticalLarga">
                 <hr id="section__lineaVerticalCorta"> 
                 <div class="section__sobreNosotros"> -->
-                    <img class="section__imagen" src="images/Suites.jpg" alt="Syrah Suites portada">
+                <img class="section__imagen" src="images/Suites.jpg" alt="Syrah Suites portada">
                 </div>
                 <div class="col-lg-6 section__sobreNosotros">
                     <h2 class="section__tituloSobreNosotros">SOBRE NUESTROS APARTAMENTOS.</h2>
@@ -105,61 +104,56 @@
                 </div>
                 <!-- <hr id="section__lineaHorizontalLarga2">
                 <hr id="section__lineaHorizontalCorta2"> -->
+            </div>
+        </section>
+        <!-- SPA -->
+        <section class="section__spa">
+            <div class="row">
+                <div class="col-lg-6 section__tituloSpa">
+                    <h3 class="section__tituloSpa">VENI A DISFRUTAR Y RELAJARTE EN NUESTRO SPA</h3>
+                </div>
+                <div class="col-lg-6">
+                    <p class="section__parrafoSpa">Nuestro exclusivo spa cuenta con todo lo necesario para que salgas renovado, envianos un mensaje a través de wsp y enterate de todas las promociones de este increíble espacio, pensado para tu reláx.</p>
+                    <a class="section__botonSpa--modifier" href="pages/spa.html"><input class="section__botonSpa" type="button" value="Conocer más"></a>
                 </div>
             </div>
         </section>
-    
-
-        <!-- SPA -->
-        <section class="section__spa">
-        <div class="row">
-        <div class="col-lg-6">
-            <h3 class="section__tituloSpa">VENI A DISFRUTAR Y RELAJARTE EN NUESTRO SPA</h3>
-            </div>
-            <div class="col-lg-6">
-            <p class="section__parrafoSpa">Nuestro exclusivo spa cuenta con todo lo necesario para que salgas renovado, envianos un mensaje a través de wsp y enterate de todas las promociones de este increíble espacio, pensado para tu reláx.</p>
-            <a class="section__botonSpa--modifier" href="pages/spa.html"><input class="section__botonSpa" type="button" value="Conocer más"></a>
-        </div>
-        </div>
-    </section>
-
 
         <!-- FOOTER -->
         <footer>
-        <!-- <hr class="footer__linea"> -->
-        <div class="row">
-        <div class="col-lg-6">
-            <div class="footer__informacion">
-                <img class="footer__logo" src="images/logopng.png" alt="logo">
-                <h4> Syrah Suites & Studios</h4>
-                <p>Suites: Humboldt 1885, Palermo Hollywood</p>
-                <p>Studios: Godoy Cruz 1655, Palermo Soho</p>
-                <p>reservas@syrahsuites.com</p>
-                <p>Teléfono: +(54 11) 4774 3263</p>
-                <p>Whatsapp: +(54 9) 11 3134 0061</p>
-            </div>
-            <div class="footer__redes">
-                <img class="footer__positionFb" src="images/face.png" alt="">
-                <img class="footer__positionIg" src="images/instagram.png" alt="">
-            </div>
-        </div>    
-        <div class="col-lg-6">
-            <div class="footer__newsletter">
-                <h4>Newsletter</h4>
-                <form class="footer__formulario" action="">
-                    <label for="nombre">Nombre:</label>
-                    <input class="footer__input" type="text" name="nombre" id="nombre">
-                    <label for="mail">Correo:</label>
-                    <input class="footer__input" type="email" name="mail" id="mail">      
-                    <input class="footer__boton" type="submit" value="Suscribirse">
-                </form>
-            </div>
-            <div class="footer__wsp">
-                <img src="images/whatsapp.png" alt="">
-            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer__informacion">
+                        <img class="footer__logo" src="images/logopng.png" alt="logo">
+                        <h4> Syrah Suites & Studios</h4>
+                        <p>Suites: Humboldt 1885, Palermo Hollywood</p>
+                        <p>Studios: Godoy Cruz 1655, Palermo Soho</p>
+                        <p>reservas@syrahsuites.com</p>
+                        <p>Teléfono: +(54 11) 4774 3263</p>
+                        <p>Whatsapp: +(54 9) 11 3134 0061</p>
+                    </div>
+                    <div class="footer__redes">
+                        <img class="footer__positionFb" src="images/face.png" alt="">
+                        <img class="footer__positionIg" src="images/instagram.png" alt="">
+                    </div>
+                </div>    
+                <div class="col-lg-6">
+                    <div class="footer__newsletter">
+                        <h4>Newsletter</h4>
+                        <form class="footer__formulario" action="">
+                            <input class="footer__input" type="text" name="nombre" id="nombre">
+                            <label for="nombre">Nombre:</label>
+                            <input class="footer__input" type="email" name="mail" id="mail">      
+                            <label for="mail">Correo:</label>
+                            <input class="footer__boton" type="submit" value="Suscribirse">
+                        </form>
+                    </div>
+                    <div class="footer__wsp">
+                        <img src="images/whatsapp.png" alt="">
+                    </div>
+                </div>
+            </div>    
         </footer>
-    </div>
-</div>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
     </div>

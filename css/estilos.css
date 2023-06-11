@@ -13,9 +13,6 @@ body{
 /* INDEX */
 
 /* HEADER */
-.header__menu{
-    position:sticky;
-} 
 
 .header__nav{
     display: flex;
@@ -33,25 +30,32 @@ body{
 
 .header__logo{
     display: flex;
-    justify-content: center;
+    flex-flow: row nowrap; 
+    justify-items: center;
+    align-items: center;
     width: 8rem;
     height: 8rem;
+    margin-left: 0rem;
 }
 
-/* 
+
 .header__video {
+    display: flex;
     position:absolute;
     top:0;
     left: 0;
+    right: 0;
     z-index: -1;
-} */
+} 
     
 .header__video video{
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
     z-index: -10;
-    position: absolute;
-    top:0;
-    left: 0;
-    width:100%;}
+    width:100%;
+    object-fit: cover;
+}
 
 .header__disponibilidad{
     display: flex;
@@ -231,44 +235,6 @@ a{
 }
 
 
-#horizontallargo{
-    height: 1px;
-    width: 70%;
-    background-color:#990f0f;
-}
-
-#horizontalcorto{
-    height: 1.5px;
-    width: 40%;
-    background-color:#990f0f;
-}
-
-
-#horizontallargo2{
-    height:1.5px;
-    width: 70%;
-    background-color:#990f0f;
-}
-
-#horizontalcorto2{
-    height: 1px;
-    width: 40%;
-    background-color:#990f0f;
-}   
-
-#verticallargo2{
-    transform: rotate(90deg);
-    height:1.5px;
-    width: 30%;
-    background-color:#990f0f;
-}
-
-#verticalcorto2 {
-    transform: rotate(90deg);
-    height: 1px;
-    width: 25%;
-    background-color:#990f0f;
-}   
 
 /* SECTION SOBRE NOSOTROS */
 
@@ -306,6 +272,8 @@ a{
 
 /* SECTION SPA */
 .section__spa{
+    display: flex;
+    flex-flow: row nowrap;
     background-image: url(../images/spa1.JPG);
     background-position: center;
     background-size: cover;
@@ -315,29 +283,24 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-items: center;
-    align-items: center;
+    justify-content: center;
+    align-content: center;
     text-align: center;
-    width: 30rem;
     font-size: 3.5rem;
     line-height: 5rem;
     color:black;
     font-weight: bold;
-    margin-bottom: 8rem;
-    margin-top:3rem;
-    margin-left:3.7rem;
 }
 .section__parrafoSpa{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-items: center;
-    align-items: center;
+    justify-content: center;
+    align-content: center;
     text-align: center ;
     font-size: 1.5rem;
     width: 30rem;
-    margin-bottom: 2rem;    
-    margin-top:9rem;
+    margin-top:3rem;
     margin-left:5rem;
     color: black;
 }
@@ -347,7 +310,7 @@ a{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     margin-left:3rem;
 
 }
@@ -364,7 +327,6 @@ a{
     font-size: 18px;
     border-radius: 28px;
 }
-
 
 /* FOOTER */
 .footer__linea{
@@ -465,7 +427,7 @@ display: flex;
 }
 
 
-@media (max-width: 576px) {
+@media only screen and (min-width: 320px) and (max-width: 576px) {
     .header__nav{
         font-size:1rem;
     }
@@ -481,10 +443,10 @@ display: flex;
         font-size: 10px;
     }
 
-    .header__video{
+    .header__video video{
         padding-right: 0;
         margin-right: 0;
-        width: 100%;
+        max-width: 100%;
     }
     .main__frase{
         margin-top:1rem;
@@ -534,14 +496,18 @@ display: flex;
     .section__spa{
         margin-top: 2rem;
         padding: 0;
+        width: 100%;
     }
     .section__tituloSpa{
-        font-size: 36px;
+        font-size: 32px;
         padding-top:4rem;
         line-height: 3rem;
         margin-bottom:0rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
     }
     .section__parrafoSpa{
+        font-size: 22px;
         margin-top:1rem;
         margin-left: 2rem;
     }
@@ -573,53 +539,42 @@ display: flex;
 
 /* PAGINA SUITES */
 
-.portadasuites{
+.header__portadaSuites{
     background-image: url(../images/portadapagsuites.jpg);
     background-size: cover;
 }
 
-#logoppalsuites{
-    width: 8rem;
-    height: 8rem;
-    align-items: center;
-    margin-left: 40rem;
-}
-
-.navsuites{
-    list-style-type: none;
-    text-decoration : none;
-    display: inline-block;
-    margin-left:4rem;
-    margin-right: 2rem;
-    margin-top:1rem;
-    font-size:1.3rem;
-}
-
-#listudiospa{
+#header__listaSuites{
     margin-left:10rem;
     margin-right:10rem;
 }
-
-
-.h1portada{
+.header__tituloSuites{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
     width: 35rem;
     font-size: 3rem;
-    margin-left: 5rem;
     margin-bottom: 1rem;
     color:#990f0f;
     
 }
-.pportada{
+.header__parrafoSuites{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
     font-size: 1rem;
     width: 25rem;
     padding:1rem;
     border-radius: 8px;
+    margin-left:5rem;
     margin-top: 1rem;
-    margin-left:3rem;
     background-color: #311b1b6e;
     color: white;
 }
-.botonreservar {
+.header__botonSuites {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
     background-color: #990f0f;
     border: 2px solid;
     color: white;
@@ -634,113 +589,136 @@ display: flex;
 
 
 /* MAIN PAGINA SUITES y studios */
-.tipos{
+.main__tipos{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
     text-align: center;
 }
-.tiposdesuites{
+.main__tiposDeSuites{
+    display: flex;
+    flex-flow: row nowrap;
     list-style-type: none;
     text-decoration: none;
-    display: inline-block;
     margin-top:2rem;
     margin-bottom: 2rem;
     font-size:1.3rem;
     font-weight: 400;
 }
-.navtipodesuites{
+.main__navSuites{
     color: #990f0f;
 }
 
-.derecha{
-    position:relative;
+.main__derecha{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     border: black;
     border-width: 1px;
     border-style: solid;
-    padding-bottom: 30rem;
-    padding-top:3rem;
+    padding-top:4rem;
     padding-left:3rem;
+    padding-bottom: 4rem;
 }
-.imgderecha{
-    position:absolute;
-    width: 60%;
-    height:440px;
+.main__imagenDerecha{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height:500px;
 }
-
-.hrderecha{
-    position: absolute;
+.main__lineaYTituloDerecha{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.main__lineaDerecha{
     height: 2px;
-    width: 7%;
+    width: 20%;
     background-color:#990f0f;
-    margin-left:52rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
 }
-.hderecha{
-    position: absolute;
-    margin-left:60rem;
-    margin-bottom:1rem;
-    margin-top:2.5rem;
+.main__tituloDerecha{
+    font-size: 32px;
+    margin-top:1rem;
     margin-right:1rem;
     color:#990f0f;
 }
-.pderecha{
-    margin-top:8rem;
-    margin-left:45rem;
-    margin-right:6rem;
+.main__parrafoDerecha{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top:1rem;
+    margin-right:1rem;
+    margin-left: 1rem;
     font-size: 1.2rem;
     background-color: white ;
     display: flex;
-    position: absolute;
     padding: 1.2rem;
     border-color: black ;
     border-width: 1px;
     border-style: solid;
+    z-index:100;
 }
 
-
-.izquierda{
-    position:relative;
+.main__izquierda{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #640404;
     border: black;
     border-width: 1px;
     border-style: solid;
-    padding-bottom: 30rem;
-    padding-top:3rem;
+    padding-top:4rem;
     padding-left:3rem;
-    background-color: #640404;
-}
-.imgizquierda{
-    position:absolute;
-    width: 60%;
-    height:440px;
-    margin-left: 28rem;
+    padding-bottom: 4rem;
 }
 
-.hrizquierda{
-        position: absolute;
-        height: 2px;
-        width: 7%;
-        background-color: white;
-        margin-left:20rem;
-        margin-top: 4rem;
+.main__lineaYTituloIzquierda{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
-.hizquierda{
-    position: absolute;
-    margin-left:1rem;
-    margin-top:2.5rem;
+.main__lineaIzquierda{
+    height: 2px;
+    width: 20%;
+    background-color:white;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+.main__tituloIzquierda{
+    font-size: 32px;
+    margin-top:1rem;
     margin-right:1rem;
     color: white;
 }
-.pizquierda{
-    margin-top:8rem;
-    margin-left:3rem;
-    margin-right:45rem;
-    font-size: 1.2rem;
-    color: white;
-    background-color:#640404;
+
+.main__parrafoIzquierda{
     display: flex;
-    position: absolute;
+    flex-flow: row wrap;
+    margin-top:1rem;
+    margin-right:1rem;
+    font-size: 1.2rem;
+    background-color:#640404;
+    color: antiquewhite ;
+    display: flex;
     padding: 1.2rem;
-    border-color: white ;
+    border-color: black ;
     border-width: 1px;
     border-style: solid;
+    z-index:100;
+}
+
+.main__imagenIzquierda{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height:500px;
 }
 
 /* FOOTER PAGINA SUITES/STUDIOS/SPA Y CONTACTO*/
