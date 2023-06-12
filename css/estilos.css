@@ -386,7 +386,7 @@ a{
     text-align: center;
     font-size: 3.5rem;
     line-height: 5rem;
-    color:black;
+    color:rgb(255, 255, 255);
     font-weight: bold;
 }
 .section__parrafoSpa{
@@ -401,6 +401,8 @@ a{
     margin-top:3rem;
     margin-left:5rem;
     color: black;
+    background-color: #ffffff83;
+    padding:0.5rem;
 }
 
 .section__botonSpa--modifier{
@@ -441,7 +443,10 @@ a{
     }
     .header__disponibilidad{
         margin-top: 4rem;
-        justify-content: center;    
+        justify-content: center;
+    }
+    #edificio{
+        margin-left:3rem;
     }
     
     .header__boton{
@@ -466,12 +471,15 @@ a{
         text-align: center;
     }
 
+    .main__tituloYLineaSuites{
+        margin-right: 3rem;
+    }
     .main__suites{
         margin-left: 3rem;
     }
     .main__botonDescubrirSuites{
-        margin-left: 2rem;
-        justify-items: center;
+        justify-content: center;
+        margin-right:2rem;
     }
 
     .main__botonDescubrirStudios{
@@ -488,15 +496,15 @@ a{
     }
 
     .section__imagen{
-        width: 35rem;
-        height: 20rem;
+        width: 37rem;
+        height: 22rem;
         justify-content: flex-start;
         
     }
     .section__sobreNosotros{
         padding-left:0;
         padding-right: 0;
-        width: 35rem;    
+        width: 37rem;    
     
     }
     .section__tituloSobreNosotros{
@@ -510,8 +518,7 @@ a{
     }
     .section__spa{
         margin-top: 2rem;
-        padding: 0;
-        width: 100%;
+        width: 590px;
     }
     .section__tituloSpa{
         font-size: 32px;
@@ -520,16 +527,20 @@ a{
         margin-bottom:0rem;
         margin-right: 2rem;
         margin-left: 2rem;
+        width:580px;
     }
     .section__parrafoSpa{
         font-size: 22px;
         margin-top:1rem;
-        margin-left: 2rem;
+        justify-items: center;
+        background-color: #ffffff69;
+        border-radius: 10px;
+        padding:0.5rem;
     }
 
     .section__botonSpa--modifier{
-        margin-left:2.5rem;
-    }
+        margin-right: 4rem;
+        }
 
     .footer__logo{
         margin-left:14rem;
