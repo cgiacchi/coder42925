@@ -1019,7 +1019,7 @@ a{
 
     /* PAGINA SPA */
     
-.portadaspa{
+.header__portadaSpa{
     background-image: url(../images/PORTADASPA.jpg);
     background-size: cover;
 }
