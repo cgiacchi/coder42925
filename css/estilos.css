@@ -431,12 +431,16 @@ a{
 
 @media only screen and (max-width: 500px) {
     *{
-        box-sizing: content-box;
+        box-sizing:border-box;
     }
 
     body{
         width: 100% !important;
         overflow-x: hidden;
+    }
+    .container-fluid{
+        padding-right:0;
+        padding-left: 0;
     }
 
     .header__nav{
@@ -450,7 +454,20 @@ a{
 
     .header__disponibilidad{
         margin-top: 4rem;
+        margin-right: 0;
         justify-content: center;
+    }
+    .col-lg-12{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .col-lg-4{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .row{
+        margin-left: 0;
+        margin-right: 0;
     }
     
     .header__boton{
@@ -502,14 +519,16 @@ a{
     .section__imagen{
         width: 500px;
         height: 22rem;
-        justify-content: flex-start;
+        justify-content: center;
+        margin-right: 0;
         
     }
     .section__sobreNosotros{
         padding-left:0;
         padding-right: 0;
-        width: 500px;    
-    
+        width: 500px;
+        margin-right: 0;    
+        justify-content: center;
     }
     .section__tituloSobreNosotros{
         font-size: 24px;
@@ -522,6 +541,8 @@ a{
     .section__spa{
         margin-top: 2rem;
         width: 500px;
+        margin-right: 0;
+        justify-content: center;
     }
     .section__tituloSpa{
         font-size: 32px;
@@ -530,6 +551,7 @@ a{
         margin-bottom:0rem;
         width:450px;
         margin-left:1.5rem;
+        justify-content: center;
         }
     .section__parrafoSpa{
         font-size: 18px;
@@ -539,6 +561,7 @@ a{
         border-radius: 10px;
         padding:0.5rem;
         width:350px;
+        justify-content: center;
     }
 
     .section__botonSpa--modifier{
@@ -557,11 +580,29 @@ a{
     .footer__newsletter{
     margin-left: 10rem;
         }
-    .footer__boton{
-        margin-bottom: 3rem;
-        padding: 10px 15px;
-        height:30px; 
-        width: 100px;
+
+    .main__tiposNombres{
+        padding-right: 1rem;
+        text-align: center;
+    }
+    .main__nav{
+        font-size: 20px;
+    }
+    .main__izquierda{
+        flex-direction: column;
+    }
+    .carousel{
+        flex-direction: column;
+    }
+    .main__parrafoIzquierda{
+        flex-direction: column;
+    }
+    .main__lineaYTituloIzquierda{
+        flex-direction: column;
+    }
+    .main__derecha{
+        flex-direction: column-reverse;
+    }
 }
 
 
@@ -610,13 +651,11 @@ a{
     margin-bottom: 2rem;
     margin-left:11rem;
 }
-
-
 /* MAIN PAGINA SUITES y studios */
 .main__tipos{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
 }
 .main__tiposNombres{
@@ -625,11 +664,10 @@ a{
     list-style-type: none;
     text-decoration: none;
     margin-top:1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
     font-size:1.3rem;
     font-weight: 400;
     color: #990f0f;
-    padding-left: 0.5rem;
 }
 .main__nav{
     color: #990f0f;
@@ -646,8 +684,9 @@ a{
     padding-left:3rem;
     padding-bottom: 4rem;
 }
-
-
+.col-lg-8 .col-lg-4{
+    display: flex;
+}
 .carousel-item{
     display: flex;
     flex-flow: row wrap;
