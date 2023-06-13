@@ -951,6 +951,10 @@ a{
         width: 100% !important;
         overflow-x: hidden;
     }
+
+    .row{
+        margin:0;
+    }
     .container-fluid{
         padding-right:0;
         padding-left: 0;
@@ -1002,8 +1006,6 @@ a{
 
     .main__tituloYLineaSuites{
         margin-right: 3rem;
-    }
-    .main__suites{
     }
     .main__botonDescubrirSuites{
         justify-content: center;
@@ -1087,6 +1089,10 @@ a{
     .footer__newsletter{
     margin-left: 10rem;
     }
+
+    .footer__wsp{
+        margin-right:0;
+    }
 /* -------------PAGINA SUITES-------------- */
     .header__portadaSuites{
         width: 500px;
@@ -1098,40 +1104,56 @@ a{
     .header__tituloYParrafoSuites{
         width: 400px;
         margin-right: 0;
+        text-align: center;
     }
 
     .header__tituloSuites{
         margin-right: 0;
         width: 400px;
         font-size: 32px;
+        color:white;
     }
     .main__nav{
         visibility:collapse;
     }
     .main__imagenDerecha{
-        width:400px !important;
+        width:350px !important;
         height: 250px !important;
-        margin-left:1rem;
+        margin-left: 1rem;
     }
     .main__parrafoDerecha{
-        width:400px;
-        margin-left:1rem;
+        width:350px;
         font-size: 14px;
+        margin-right: 0;
     }
     .main__imagenIzquierda{
-        width:400px !important;
+        width:350px !important;
         height: 250px !important;
     }
-
     .main__parrafoIzquierda{
-        width: 400px;
+        width:350px;
         font-size: 14px;
+        margin-right: 0;
+    }
+
+    .main__tituloDerecha{
+        font-size:26px;
+        margin-right: 0;
+    }
+    .main__tituloIzquierda{
+        font-size:26px;
+        margin-right:0;
+    }
+    .main__parrafoIzquierda{
+        width: 350px;
+        font-size: 14px;
+        margin-right: 0;
     }
     .main__derecha{
         flex-wrap: wrap;
         flex-direction: column-reverse;
         margin-right: 0;
-        margin-left:1.2rem;
+        margin-left:2rem;
         padding: 2rem;
         width:500px;
     }
@@ -1139,7 +1161,7 @@ a{
     .main__izquierda{
         flex-direction: column;
         flex-wrap: wrap;
-        margin-left:1.2rem;
+        margin-left:2rem;
         width: 500px;
     }
 
@@ -1148,15 +1170,24 @@ a{
         height:auto;
         margin-right: 0;
         }
+    
     .header__tituloYParrafoStudios{
-        width: 500px;
+        width: 400px;
         margin-right: 0;
+        margin-left:1rem;
+        text-align: center;
     }
 
     .header__tituloStudios{
         margin-right: 0;
-        width: 500px;
+        width: 400px;
         font-size: 32px;
+        margin-left: 3rem;
+        color: white;
+    }
+    .header__botonStudios{
+        margin-right: 0;
+        margin-left: 10.5rem;
     }
 }
 
@@ -1285,9 +1316,8 @@ a{
         margin-right: 2rem;
     }
     .footer__logo{
-    margin-left: 8rem;
     justify-items: center;
-    margin-left: 17rem;
+    margin-left: 17rem; 
     }
     .footer__informacion{
         font-size: 12px;
@@ -1297,8 +1327,9 @@ a{
         justify-content: center;
     }
     .footer__newsletter{
-    margin-left: 18rem;
+    margin-left: 16rem;
     }
+
 /* -------------PAGINA SUITES-------------- */
     .header__portadaSuites{
         width: 768px;
@@ -1321,7 +1352,9 @@ a{
         font-size: 40px;
         color: white;
     }
-
+    .header__botonSuites{
+        margin-left:18rem;
+    }
     .main__nav{
         margin-left: 2rem;
     }
@@ -1362,10 +1395,6 @@ a{
         height:auto;
         margin-right: 0;
         }
-    /* .header__tituloYParrafoStudios{
-        width: 700px;
-        margin-right: 0;
-    } */
     .header__parrafoStudios{
         margin-right: 0;
         margin-left: 10rem;
@@ -1373,7 +1402,7 @@ a{
     }
     .header__botonStudios{
         margin-right: 0;
-        margin-left:10rem;
+        margin-left:18rem;
         justify-content: center;
     }
     .header__tituloStudios{
