@@ -429,24 +429,23 @@ a{
 }
 
 
-@media only screen and (min-width: 320px) and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
     *{
         box-sizing: content-box;
     }
-    
+
     .header__nav{
-        font-size:1rem;
+        font-size:0.9rem;
     }
+
     .header__logo{
         width: 6rem;
         height: 6rem;
     }
+
     .header__disponibilidad{
         margin-top: 4rem;
         justify-content: center;
-    }
-    #edificio{
-        margin-left:3rem;
     }
     
     .header__boton{
@@ -461,7 +460,7 @@ a{
     }
 
     .header__video{
-        width:590px;
+        width: 500px;
         height:auto;
     }
     .main__frase{
@@ -469,17 +468,17 @@ a{
         font-size:20px;
         justify-items: center;
         text-align: center;
+        width: 400px;
     }
 
     .main__tituloYLineaSuites{
         margin-right: 3rem;
     }
     .main__suites{
-        margin-left: 3rem;
     }
     .main__botonDescubrirSuites{
         justify-content: center;
-        margin-right:2rem;
+        margin-right:1rem;
     }
 
     .main__botonDescubrirStudios{
@@ -487,7 +486,7 @@ a{
         margin-right: 0rem;
     }
     .main__studios{
-        margin-left: 8rem;
+        margin-left: 5rem;
     }
     
     .section__sobreNosotrosImagen{
@@ -496,7 +495,7 @@ a{
     }
 
     .section__imagen{
-        width: 37rem;
+        width: 500px;
         height: 22rem;
         justify-content: flex-start;
         
@@ -504,62 +503,61 @@ a{
     .section__sobreNosotros{
         padding-left:0;
         padding-right: 0;
-        width: 37rem;    
+        width: 500px;    
     
     }
     .section__tituloSobreNosotros{
-        font-size: 22px;
-
+        font-size: 24px;
     }
     .section__parrafoSobreNosotros{
-        font-size: 12px;
+        font-size: 16px;
         line-height: 1.5rem;
         padding: 0rem 2rem 0rem 4rem;
     }
     .section__spa{
         margin-top: 2rem;
-        width: 590px;
+        width: 500px;
     }
     .section__tituloSpa{
         font-size: 32px;
         padding-top:4rem;
         line-height: 3rem;
         margin-bottom:0rem;
-        margin-right: 2rem;
-        margin-left: 2rem;
-        width:580px;
-    }
+        width:450px;
+        margin-left:1.5rem;
+        }
     .section__parrafoSpa{
-        font-size: 22px;
+        font-size: 18px;
         margin-top:1rem;
         justify-items: center;
         background-color: #ffffff69;
         border-radius: 10px;
         padding:0.5rem;
+        width:350px;
     }
 
     .section__botonSpa--modifier{
-        margin-right: 4rem;
-        }
-
+        margin-right: 2rem;
+    }
     .footer__logo{
-        margin-left:14rem;
+    margin-left: 8rem;
     }
     .footer__informacion{
         font-size: 12px;
-        margin-left: 3rem;
         text-align: center;
     }
     .footer__redes{
-        margin-left:9rem;
+        justify-content: center;
     }
     .footer__newsletter{
-        margin-left:12rem;
-    }
+    margin-left: 10rem;
+        }
     .footer__boton{
-        margin-left:3rem;
         margin-bottom: 3rem;
-    }
+        padding: 10px 15px;
+        height:30px; 
+        width: 100px;
+}
 }
 
 
