@@ -1,0 +1,104 @@
+    .header__portadaSpa{
+        background-image: url(../images/PORTADASPA.jpg);
+        background-size:cover;
+        .header__lineaYTituloSpa{
+            @include flex-row-center;
+            margin-left:1rem;
+            margin-top:10rem;
+            margin-bottom:10rem;
+            .header__lineaLargaIzq{
+                align-content: center;
+                height: 2px;
+                width: 30%;
+                background-color:#990f0f;
+            }
+            .header__tituloSpa{
+                align-content: center;
+                font-size: 3rem;
+                padding-left:2rem;
+                padding-right: 2rem;
+                color:#990f0f;
+            }
+            .header__lineaLargaDer{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-content: center;
+                flex-wrap: wrap;
+                height: 2px;
+                width: 30%;
+                background-color:#990f0f;
+            }
+    }
+}
+    .main__galeriaSpa{
+        .main__parrafo1{
+        @include flex-row-center;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 500px;
+        padding: 2rem;
+        text-align: center;
+        margin-top:4rem;
+        margin-left: 4rem;
+        color: #990f0f;
+        font-weight: bold;
+        font-size: 32px;
+        }
+        .main__imagenSpa1{
+            width: 700px;
+            height: 500px;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .main__imagenSpa2{
+            width: 100%;
+            height:600px;
+            object-fit: cover;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.336);
+        }
+        .main__imagenSpa3{
+            width: 700px;
+            height: 500px;
+            padding: 2rem;
+            border-radius: 8px;
+
+        }
+        .main__parrafo2{
+            @include flex-row-center;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 500px;
+            padding: 2rem;
+            text-align: center;
+            margin-top:2rem;
+            margin-left: 4rem;
+            color:#990f0f;
+            font-size: 21px;
+            line-height: 2rem;
+            font-weight: bolder;
+
+        }
+        .main__imagenSpa4{
+            width: 100%;
+            height:600px;
+            object-fit: cover;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.336);
+        }
+        .main__parrafo3{
+            @include flex-row-center;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 500px;
+            padding: 2rem;
+            text-align: center;
+            margin-top:4rem;
+            margin-left: 4rem;
+        }
+        .main__imagenSpa5{
+            width: 700px;
+            height: 500px;
+            padding:2rem;
+        }
+    }
+

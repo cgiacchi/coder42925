@@ -7,6 +7,7 @@
     <title>Contacto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../images/logopng.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +18,7 @@
 <div class="container-fluid">
     <!-- HEADER -->
     <header>
-        <div class="row header__portadaStudios">
+        <div class="row header__portadaContacto">
             <div class="col-lg-12">
                 <nav class="header__menu">
                     <ul class="header__nav">
@@ -30,44 +31,116 @@
                 </nav>
             </div>
             <div class="col-lg-6">
-            <hr class="contactoizq">
-            <hr class="contactoizq2">
-            <hr class="contactoder">
-            <hr class="contactoder2">
-            <h1 class="h1sobrenosotros">SOBRE NOSOTROS</h1>
+                <div class="header__lineas">    
+                <hr class="header__lineaLargaIzq">
+                <hr class="header__lineaCortaIzq">
+                <hr class="header__lineaLargaDer">
+                <hr class="header__lineaLargaDer">
+                </div>
+                <h1 class="header__tituloContacto">SOBRE NOSOTROS</h1>
             </div>
     </header>
-    <!-- MAIN -->
     <main>
-        <div class="seccionmapasuites">
-            <hr class="horizontalcontactosuites">
-            <hr class="horizontalcontactosuites2">
-            <h2 class="titulomapasuites">SYRAH SUITES</h2>
-            <iframe class="mapasuites" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13139.24018042319!2d-58.4338494!3d-34.5836727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58e0da72c73%3A0x92e29968f740ca9f!2sSyrah%20Suites!5e0!3m2!1ses-419!2sar!4v1684191883901!5m2!1ses-419!2sar" title="mapa suites" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p class="pmapasuites">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis itaque assumenda, fuga consequuntur nemo unde voluptas ipsam fugit in consectetur quibusdam hic voluptates officia eum? Magni exercitationem veritatis, maxime officia saepe vitae amet a odit perferendis qui ab mollitia suscipit cumque molestiae deleniti laboriosam voluptatem cum dolores esse nobis. Ratione!</p>
-        </div>
-        <div class="seccionmapastudios">
-            <hr class="horizontalcontactostudios2">
-            <hr class="horizontalcontactostudios1">
-            <h2 class="titulomapastudios">SYRAH STUDIOS</h2>
-            <iframe class="mapastudios" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.646235059251!2d-58.43688192562643!3d-34.58781687295988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb598be793d85%3A0xb289e730bdd6aea8!2sSyrah%20Studios!5e0!3m2!1ses-419!2sar!4v1684191966753!5m2!1ses-419!2sar" title="mapa studios" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p class="pmapastudios">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, vel! Nesciunt veniam nobis assumenda? Tenetur unde dolorem quis illo sequi quasi doloremque tempore vero asperiores dicta sint eaque qui sunt consequuntur consequatur pariatur quos vel id, assumenda officia itaque necessitatibus dolorum architecto debitis? Ipsa in nisi consequuntur harum ullam iure!</p>
+        <div class="row">
+        <div class="main__seccionMapaSuites">
+            <div class="col-lg-8">
+                    <div class="main__lineaYTituloMapaSuites">
+                        <hr class="main__lineaMapaSuites">
+                        <h2 class="main__tituloMapaSuites">SYRAH SUITES</h2>
+                    </div>
+                    <iframe class="main__mapaSuites" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13139.24018042319!2d-58.4338494!3d-34.5836727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58e0da72c73%3A0x92e29968f740ca9f!2sSyrah%20Suites!5e0!3m2!1ses-419!2sar!4v1684191883901!5m2!1ses-419!2sar" title="mapa suites" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-4">
+            <p class="main__parrafoMapaSuites">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis itaque assumenda, fuga consequuntur nemo unde voluptas ipsam fugit in consectetur quibusdam hic voluptates officia eum? Magni exercitationem veritatis, maxime officia saepe vitae amet a odit perferendis qui ab mollitia suscipit cumque molestiae deleniti laboriosam voluptatem cum dolores esse nobis. Ratione!</p>
+            </div>
+        </div>    
+        <div class="main__seccionMapaStudios">
+            <div class="col-lg-4">
+            <p class="main__parrafoMapaStudios">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis itaque assumenda, fuga consequuntur nemo unde voluptas ipsam fugit in consectetur quibusdam hic voluptates officia eum? Magni exercitationem veritatis, maxime officia saepe vitae amet a odit perferendis qui ab mollitia suscipit cumque molestiae deleniti laboriosam voluptatem cum dolores esse nobis. Ratione!</p>
+            </div>
+            <div class="col-lg-8">
+                <div class="main__lineaYTituloMapaStudios">
+                    <hr class="main__lineaMapaStudios">
+                    <h2 class="main__tituloMapaStudios">SYRAH STUDIOS</h2>
+                </div>
+                <iframe class="main__mapaStudios" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.646235059251!2d-58.43688192562643!3d-34.58781687295988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb598be793d85%3A0xb289e730bdd6aea8!2sSyrah%20Studios!5e0!3m2!1ses-419!2sar!4v1684191966753!5m2!1ses-419!2sar" title="mapa studios" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </div>
     </main>
-    <!-- SECCION BOX CONTACTANOS FALTA COMPLETAR -->
-    <!-- <section class="contactanos">
-        <h3 class="hcontactanos">Contactanos</h3>
-        <form class="formcontactanos" action="">
+    <div class="row">
+        <div class="col-lg-12 section__contactanosForm">
+        <section class="section__contactanos">
+        <h3 class="section__tituloContactanos">Contactanos</h3>
+        <form class="section__cuerpoContactanos" action="">
             <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" id="nombre">
             <label for="mail">Correo electronico:</label>
             <input type="email" name="mail" id="mail">
             <label for="mensaje">Deja tu mensaje </label>
             <textarea name="mensaje" id="mensaje" cols="30" rows="10"> </textarea>
-            <input type="submit" value="Suscribirse">    
+            <input type="submit" class="section__botonContactanos" value="Suscribirse">    
         </form>
-    </section>  -->
+        </section> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="section__faq">
+                <h3>FAQ</h3>
+                <!-- <div class="section__cuerpoFaq">
+                    <hr>
+                <div class="section__faq">
+                    <div class="section__pregunta">1.What is HTML?</div>
+                    <div class="section__respuesta">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.</div>
+                </div>
+                <div class="section__faq">
+                    <div class="section__pregunta">2.What is CSS?</div>
+                    <div class="section__respuesta">CSS stands for Cascading Style Sheets. It is a style sheet language which is used to describe the look and formatting of a document written in markup language. </div>
+                </div>
+                <div class="section__faq">
+                    <div class="section__pregunta">3.What is JAVASCRIPT?</div>
+                    <div class="section__respuesta">JavaScript (js) is a light-weight object-oriented programming language which is used by several websites for scripting the webpages</div>
+                </div>
+                <hr>
+                </div> -->
+                <div class="accordion accordion-flush section__cuerpoFaq" id="accordionFlushExample">
+                    <hr>
+      <div class="accordion-item">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed section__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Accordion Item #1
+          </button>
+        </h3>
+        <div id="flush-collapseOne" class=" section__pregunta accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body section__respuesta">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+        </div>
+      </div>
+      <div class="accordion-item section__pregunta">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed section__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Accordion Item #2
+          </button>
+        </h3>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body section__respuesta">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+        </div>
+      </div>
+      <div class="accordion-item section__pregunta">
+        <h3 class="accordion-header">
+          <button class="accordion-button collapsed section__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Accordion Item #3
+          </button>
+        </h3>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body section__respuesta">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+        </div>
+      </div>
+    </div>
+
+        </section>
+        </div>
+    </div>
 
     <!-- FOOTER -->
     <footer>
@@ -99,7 +172,7 @@
                 </form>
             </div>
             <div class="footer__wsp">
-                <img src="../images/whatsapp.png" alt="">
+                <img class="footer__wspImagen"src="../images/whatsapp.png" alt="">
             </div>
         </div>   
         </div>     

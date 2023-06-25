@@ -1,0 +1,108 @@
+.header__portadaSuites{
+    background-image:url(../images/portadapagsuites.jpg);
+    background-size: cover;
+    z-index:-100;
+    position:sticky;
+    .header__tituloSuites{
+        @include flex-row-center;
+        flex-wrap: nowrap;
+        width: 450px;
+        font-size:  map-get($font-style,tamaño-titulo);
+        margin-bottom: 1rem;
+        color:map-get($color,bordo);
+        margin-right: 0;
+        margin-left: 2rem;
+    }
+    .header__parrafoSuites{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    font-size: map-get($font-style,tamaño-parrafo);
+    width: 400px;
+    padding:1rem;
+    border-radius: 8px;
+    margin-left:3rem;
+    margin-top: 1rem;
+    background-color: #311b1b6e;
+    color: white;
+    }
+    .header__botonSuites{
+        @include flex-row-center;
+        @include estiloBoton;
+        flex-wrap: nowrap;
+        background-color: map-get($color, bordo);
+        margin-top:1rem;
+        margin-bottom: 2rem;
+        margin-left:11rem;
+    }
+}
+
+.main__tipos{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    text-align: center;
+    .main__tiposNombres{
+        display: flex;
+        flex-flow: row nowrap;
+        margin-top:1rem;
+        font-size:map-get($font-style,tamaño-nav);
+        font-weight:map-get($font-style,w500);
+        color: map-get($color,rojo);
+        .main__nav{
+            color: map-get($color,rojo);
+        }
+    }
+}
+
+.main__derecha{
+    @include mainDeptos;
+    .main__imagenDerecha{
+        @include imagenApaisada;
+        justify-content: flex-start;
+    }
+    .main__lineaYTituloDerecha{
+        @include flex-row-start;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        .main__lineaDerecha{
+            @include lineaTitulos;
+            background-color:map-get($color, rojo);
+        }
+        .main__tituloDerecha{
+            @include tituloDeptos;
+            color:map-get($color, rojo);
+        }
+    }
+    .main__parrafoDerecha{
+    @include parrafoDescripcionDt;
+    margin-left: 1rem;
+    color:black;
+    }
+}
+
+.main__izquierda{
+    @include mainDeptos;
+    background-color: map-get($color,bordo);
+    .main__lineaYTituloIzquierda{
+        @include flex-row-start;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        .main__lineaIzquierda{
+            @include lineaTitulos;
+            background-color: white;
+            }
+        .main__tituloIzquierda{
+            @include tituloDeptos;
+            color:white;
+            }
+        }
+        .main__parrafoIzquierda{
+            @include parrafoDescripcionDt;
+            background-color: map-get($color, bordo);
+        }
+        .main__imagenIzquierda{
+            @include imagenApaisada;
+            justify-content: flex-end;
+        }
+}
