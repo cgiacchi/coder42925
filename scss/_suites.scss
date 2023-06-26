@@ -14,17 +14,17 @@
         margin-left: 2rem;
     }
     .header__parrafoSuites{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-    font-size: map-get($font-style,tamaño-parrafo);
-    width: 400px;
-    padding:1rem;
-    border-radius: 8px;
-    margin-left:3rem;
-    margin-top: 1rem;
-    background-color: #311b1b6e;
-    color: white;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        font-size: map-get($font-style,tamaño-parrafo);
+        width: 400px;
+        padding:1rem;
+        border-radius: 8px;
+        margin-left:3rem;
+        margin-top: 1rem;
+        background-color: #311b1b6e;
+        color: white;
     }
     .header__botonSuites{
         @include flex-row-center;
@@ -55,15 +55,16 @@
     }
 }
 
-.main__derecha{display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        border: black;
-        border-width: 1px;
-        border-style: solid;
-        padding-top:4rem;
-        padding-left:3rem;
-        padding-bottom: 4rem;
+.main__derecha{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: black;
+    border-width: 1px;
+    border-style: solid;
+    padding-top:4rem;
+    padding-left:3rem;
+    padding-bottom: 4rem;
     .main__imagenDerecha{
         @include imagenApaisada;
         justify-content: flex-start;
@@ -82,9 +83,9 @@
         }
     }
     .main__parrafoDerecha{
-    @include parrafoDescripcionDt;
-    margin-left: 1rem;
-    color:black;
+        @include parrafoDescripcionDt;
+        margin-left: 1rem;
+        color:black;
     }
 }
 
@@ -102,16 +103,16 @@
         .main__tituloIzquierda{
             @extend .tituloDeptos;
             color:white;
-            }
         }
-        .main__parrafoIzquierda{
-            @include parrafoDescripcionDt;
-            background-color: map-get($color, bordo);
-        }
-        .main__imagenIzquierda{
-            @include imagenApaisada;
-            justify-content: flex-end;
-        }
+    }
+    .main__parrafoIzquierda{
+        @include parrafoDescripcionDt;
+        background-color: map-get($color, bordo);
+    }
+    .main__imagenIzquierda{
+        @include imagenApaisada;
+        justify-content: flex-end;
+    }
 }
 
 
@@ -140,14 +141,14 @@
         }   
     }
     .main__tipos{
-    visibility:hidden;
-    margin: 0;
-    .main__tiposNombres{
         visibility:hidden;
         margin: 0;
-    .main__nav{
-        visibility:hidden;
-        margin: 0;
+        .main__tiposNombres{
+            visibility:hidden;
+            margin: 0;
+            .main__nav{
+                visibility:hidden;
+                margin: 0;
             }
         }
     }

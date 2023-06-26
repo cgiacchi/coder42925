@@ -50,13 +50,13 @@ a{
     color:white;
     margin-top: 10px;
     .header__logo{
-    @include flex-row-center;
-    flex-wrap: nowrap;
-    align-items: center;
-    width: 8rem;
-    height: 8rem;
-    margin-left: 0rem;
-    z-index: 200;
+        @include flex-row-center;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 8rem;
+        height: 8rem;
+        margin-left: 0rem;
+        z-index: 200;
     }
 }
 .header__disponibilidad{
@@ -89,23 +89,23 @@ footer{
         }
     }
     .footer__redes{
-    @include flex-row-start;
-    flex-wrap: nowrap;
-    width: 40px;
-    height: 40px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    margin-left: 5rem;        
-    .footer__positionFb {
-        display: flex;
+        @include flex-row-start;
+        flex-wrap: nowrap;
         width: 40px;
         height: 40px;
-        margin-right: 1rem;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        margin-left: 5rem;        
+        .footer__positionFb {
+            display: flex;
+            width: 40px;
+            height: 40px;
+            margin-right: 1rem;
         }
-    .footer__positionIg{
-        display: flex;
-        width: 40px;
-        height: 40px;
+        .footer__positionIg{
+            display: flex;
+            width: 40px;
+            height: 40px;
         }
     }
     .footer__newsletter{
@@ -155,11 +155,11 @@ footer{
     align-items: flex-end;
     color: map-get($color,rojo);
     .main__frase{
-    margin-top: 5rem;
-    margin-left: 3rem;
-    font-size:  map-get($font-style,tamaño-subtitulo);
-    font-weight:  map-get($font-style,w700);
-    color: map-get($color,rojo)
+        margin-top: 5rem;
+        margin-left: 3rem;
+        font-size:  map-get($font-style,tamaño-subtitulo);
+        font-weight:  map-get($font-style,w700);
+        color: map-get($color,rojo)
     }
 }
 .main__suites{
@@ -220,10 +220,10 @@ footer{
         flex-wrap: wrap;
         align-items: flex-end;
         .main__tituloStudios{
-        color: map-get($color,rojo );
-        font-weight:  map-get($font-style,w500);
-        font-size:  map-get($font-style,tamaño-nav);
-        margin-top: 0.5rem;
+            color: map-get($color,rojo );
+            font-weight:  map-get($font-style,w500);
+            font-size:  map-get($font-style,tamaño-nav);
+            margin-top: 0.5rem;
         }
         .main__lineaStudios{
             height: 1.5px;
@@ -318,12 +318,12 @@ footer{
         flex-wrap: wrap;
         margin-bottom: 1rem;
         margin-left:3rem;
-    .section__botonSpa{
-        @include flex-row-center;
-        @include estiloBoton;
-        flex-wrap: wrap;
-        font-size: 18px;
-        border-radius: 28px;
+        .section__botonSpa{
+            @include flex-row-center;
+            @include estiloBoton;
+            flex-wrap: wrap;
+            font-size: 18px;
+            border-radius: 28px;
         }
     }
 }
@@ -336,8 +336,8 @@ footer{
         font-size: 13px;
         margin-right: 0;
         .header__logo{
-        width: 5rem;
-        height: 5rem;
+            width: 5rem;
+            height: 5rem;
         }
     }
     .header__disponibilidad{
@@ -354,13 +354,13 @@ footer{
     .frase{
         .main__frase{
             display: flex;
-        margin-top:1rem;
-        margin-left: 3rem;
-        margin-right: 1rem;
-        font-size: 20px;
-        justify-content: center;
-        text-align: center;
-        width: 400px;
+            margin-top:1rem;
+            margin-left: 3rem;
+            margin-right: 1rem;
+            font-size: 20px;
+            justify-content: center;
+            text-align: center;
+            width: 400px;
         }
     }
     .main__suites{
@@ -432,7 +432,7 @@ footer{
         .section__parrafoSobreNosotros{
             font-size: 14px;
         }
-        }
+    }
     .section__spa{
         .section__tituloSpa{
             font-size: 32px;
@@ -450,14 +450,14 @@ footer{
     }
     footer{
         .footer__newsletter{
-        margin-top:4rem;
-        flex-flow: column wrap;
-        justify-content: center;
-        margin-left:0;
-        .footer__formulario{
+            margin-top:4rem;
+            flex-flow: column wrap;
             justify-content: center;
-            .footer__boton{
-                margin-right: 0;
+            margin-left:0;
+            .footer__formulario{
+                justify-content: center;
+                .footer__boton{
+                    margin-right: 0;
                 }
             }
         }

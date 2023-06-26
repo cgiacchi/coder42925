@@ -21,7 +21,6 @@
         flex-flow: nowrap;
         justify-content: center;
         align-items: flex-end;
-
         .main__lineaMapaSuites{
             display: flex;
             height: 2px;
@@ -51,7 +50,6 @@
         box-shadow: 0px 0px 20px #2c2323;
     }
 }
-
 
 .main__seccionMapaStudios{
     display: flex;
@@ -178,10 +176,10 @@
         .accordion-header{
             cursor: pointer;
             transition: all .3s;
-        &:hover{
+            &:hover{
                 scale:110%;
                 }
-        }
+            }
         .accordion-body{
             padding: 10px;
             pointer-events: none;

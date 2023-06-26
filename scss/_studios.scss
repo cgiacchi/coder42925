@@ -14,17 +14,17 @@
         margin-left: 2rem;
     }
     .header__parrafoStudios{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-    font-size: map-get($font-style,tamaño-parrafo);
-    width: 400px;
-    padding:1rem;
-    border-radius: 8px;
-    margin-left:3rem;
-    margin-top: 1rem;
-    background-color: #311b1b6e;
-    color: white;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        font-size: map-get($font-style,tamaño-parrafo);
+        width: 400px;
+        padding:1rem;
+        border-radius: 8px;
+        margin-left:3rem;
+        margin-top: 1rem;
+        background-color: #311b1b6e;
+        color: white;
     }
     .header__botonStudios{
         @include flex-row-center;

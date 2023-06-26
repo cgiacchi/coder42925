@@ -33,17 +33,17 @@
     }
         .main__galeriaSpa{
             .main__parrafo1{
-            @include flex-row-center;
-            flex-wrap: wrap;
-            align-items: center;
-            width: 500px;
-            padding: 2rem;
-            text-align: center;
-            margin-top:4rem;
-            margin-left: 4rem;
-            color: #990f0f;
-            font-weight: bold;
-            font-size: 30px;
+                @include flex-row-center;
+                flex-wrap: wrap;
+                align-items: center;
+                width: 500px;
+                padding: 2rem;
+                text-align: center;
+                margin-top:4rem;
+                margin-left: 4rem;
+                color: #990f0f;
+                font-weight: bold;
+                font-size: 30px;
             }
             .main__imagenSpa1{
                 width: 700px;
