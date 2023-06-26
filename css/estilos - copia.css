@@ -945,7 +945,7 @@ display: flex;
         text-align: center;
         width: 400px;
     } */
-/* 
+/*
     .main__tituloYLineaSuites{
         margin-right: 3rem;
     }
@@ -961,7 +961,7 @@ display: flex;
     .main__studios{
         margin-left: 5rem;
     } */
-/* 
+/*
     .section__sobreNosotrosImagen{
         padding-left:0;
         padding-right: 0;
@@ -990,7 +990,7 @@ display: flex;
         padding: 0rem 2rem 0rem 4rem;
     } */
 
-    
+/*
     .section__spa{
         margin-top: 2rem;
         width: 500px;
@@ -1036,9 +1036,9 @@ display: flex;
 
     .footer__wsp{
         margin-right:0;
-    }
+    } */
 /* -------------PAGINA SUITES-------------- */
-    .header__portadaSuites{
+    /* .header__portadaSuites{
         width: 500px;
         height:auto;
         margin-right:0;
@@ -1354,5 +1354,4 @@ display: flex;
         width: 700px;
         font-size: 40px;
         color: white;
-    }
-}
+    }}

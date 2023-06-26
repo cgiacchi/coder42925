@@ -29,7 +29,7 @@
     .header__botonSuites{
         @include flex-row-center;
         @include estiloBoton;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         background-color: map-get($color, bordo);
         margin-top:1rem;
         margin-bottom: 2rem;
@@ -55,8 +55,15 @@
     }
 }
 
-.main__derecha{
-    @include mainDeptos;
+.main__derecha{display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: black;
+        border-width: 1px;
+        border-style: solid;
+        padding-top:4rem;
+        padding-left:3rem;
+        padding-bottom: 4rem;
     .main__imagenDerecha{
         @include imagenApaisada;
         justify-content: flex-start;
@@ -70,7 +77,7 @@
             background-color:map-get($color, rojo);
         }
         .main__tituloDerecha{
-            @include tituloDeptos;
+            @extend .tituloDeptos;
             color:map-get($color, rojo);
         }
     }
@@ -82,7 +89,7 @@
 }
 
 .main__izquierda{
-    @include mainDeptos;
+    @extend .main__derecha;
     background-color: map-get($color,bordo);
     .main__lineaYTituloIzquierda{
         @include flex-row-start;
@@ -93,7 +100,7 @@
             background-color: white;
             }
         .main__tituloIzquierda{
-            @include tituloDeptos;
+            @extend .tituloDeptos;
             color:white;
             }
         }
@@ -105,4 +112,68 @@
             @include imagenApaisada;
             justify-content: flex-end;
         }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .header__portadaSuites{
+        margin-right:0;
+        margin-left:0;
+        background-position: center;
+        .header__tituloYParrafoSuites{
+            .header__tituloSuites{
+                margin-left: 0;
+                font-size: 36px;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+            .header__parrafoSuites{
+                margin-left: 0;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+            .header__botonSuites{
+                margin-left: 7rem;
+                margin-right: 0;
+                justify-content: center;
+            }
+        }   
+    }
+    .main__tipos{
+    visibility:hidden;
+    margin: 0;
+    .main__tiposNombres{
+        visibility:hidden;
+        margin: 0;
+    .main__nav{
+        visibility:hidden;
+        margin: 0;
+            }
+        }
+    }
+    .main__derecha{
+        padding: 1rem;
+        .main__imagenDerecha{
+            width: 100%;
+            height: auto;
+        }
+        .main__lineaYTituloDerecha{
+            .main__tituloDerecha{
+                font-size: 26px;
+            }
+        }
+    }
+    .main__izquierda{
+        padding: 1rem;
+        padding-bottom: 3rem;
+        .main__imagenIzquierda{
+            width: 100%;
+            height: auto;
+        }
+        .main__lineaYTituloIzquierda{
+            .main__tituloIzquierda{
+                font-size: 26px;
+            }
+        }
+    }
 }

@@ -1,4 +1,10 @@
 @import "https://unpkg.com/transition-style";
+.tituloDeptos, .main__izquierda .main__lineaYTituloIzquierda .main__tituloIzquierda, .main__derecha .main__lineaYTituloDerecha .main__tituloDerecha, .main__izquierda .main__lineaYTituloDerecha .main__tituloDerecha {
+  font-size: 32px;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
 .header__portadaSuites {
   background-image: url(../images/portadapagsuites.jpg);
   background-size: cover;
@@ -41,7 +47,7 @@
   text-align: center;
   font-size: 14px;
   border-radius: 28px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   background-color: #640404;
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -66,7 +72,7 @@
   color: #990f0f;
 }
 
-.main__derecha {
+.main__derecha, .main__izquierda {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -77,7 +83,7 @@
   padding-left: 3rem;
   padding-bottom: 4rem;
 }
-.main__derecha .main__imagenDerecha {
+.main__derecha .main__imagenDerecha, .main__izquierda .main__imagenDerecha {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -85,27 +91,24 @@
   height: 500px;
   justify-content: flex-start;
 }
-.main__derecha .main__lineaYTituloDerecha {
+.main__derecha .main__lineaYTituloDerecha, .main__izquierda .main__lineaYTituloDerecha {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
   align-items: flex-end;
 }
-.main__derecha .main__lineaYTituloDerecha .main__lineaDerecha {
+.main__derecha .main__lineaYTituloDerecha .main__lineaDerecha, .main__izquierda .main__lineaYTituloDerecha .main__lineaDerecha {
   height: 2px;
   width: 20%;
   margin-top: 2rem;
   margin-left: 1rem;
   background-color: #990f0f;
 }
-.main__derecha .main__lineaYTituloDerecha .main__tituloDerecha {
-  font-size: 32px;
-  margin-top: 1rem;
-  margin-right: 1rem;
+.main__derecha .main__lineaYTituloDerecha .main__tituloDerecha, .main__izquierda .main__lineaYTituloDerecha .main__tituloDerecha {
   color: #990f0f;
 }
-.main__derecha .main__parrafoDerecha {
+.main__derecha .main__parrafoDerecha, .main__izquierda .main__parrafoDerecha {
   display: flex;
   flex-flow: row wrap;
   margin-top: 1rem;
@@ -121,15 +124,6 @@
 }
 
 .main__izquierda {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border: black;
-  border-width: 1px;
-  border-style: solid;
-  padding-top: 4rem;
-  padding-left: 3rem;
-  padding-bottom: 4rem;
   background-color: #640404;
 }
 .main__izquierda .main__lineaYTituloIzquierda {
@@ -147,9 +141,6 @@
   background-color: white;
 }
 .main__izquierda .main__lineaYTituloIzquierda .main__tituloIzquierda {
-  font-size: 32px;
-  margin-top: 1rem;
-  margin-right: 1rem;
   color: white;
 }
 .main__izquierda .main__parrafoIzquierda {
@@ -174,6 +165,62 @@
   justify-content: flex-end;
 }
 
+@media only screen and (max-width: 500px) {
+  .header__portadaSuites {
+    margin-right: 0;
+    margin-left: 0;
+    background-position: center;
+  }
+  .header__portadaSuites .header__tituloYParrafoSuites .header__tituloSuites {
+    margin-left: 0;
+    font-size: 36px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .header__portadaSuites .header__tituloYParrafoSuites .header__parrafoSuites {
+    margin-left: 0;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .header__portadaSuites .header__tituloYParrafoSuites .header__botonSuites {
+    margin-left: 7rem;
+    margin-right: 0;
+    justify-content: center;
+  }
+  .main__tipos {
+    visibility: hidden;
+    margin: 0;
+  }
+  .main__tipos .main__tiposNombres {
+    visibility: hidden;
+    margin: 0;
+  }
+  .main__tipos .main__tiposNombres .main__nav {
+    visibility: hidden;
+    margin: 0;
+  }
+  .main__derecha, .main__izquierda {
+    padding: 1rem;
+  }
+  .main__derecha .main__imagenDerecha, .main__izquierda .main__imagenDerecha {
+    width: 100%;
+    height: auto;
+  }
+  .main__derecha .main__lineaYTituloDerecha .main__tituloDerecha, .main__izquierda .main__lineaYTituloDerecha .main__tituloDerecha {
+    font-size: 26px;
+  }
+  .main__izquierda {
+    padding: 1rem;
+    padding-bottom: 3rem;
+  }
+  .main__izquierda .main__imagenIzquierda {
+    width: 100%;
+    height: auto;
+  }
+  .main__izquierda .main__lineaYTituloIzquierda .main__tituloIzquierda {
+    font-size: 26px;
+  }
+}
 .header__portadaStudios {
   background-image: url(../images/piletagodoy.jpg);
   background-size: cover;
@@ -223,6 +270,29 @@
   margin-left: 11rem;
 }
 
+@media only screen and (max-width: 500px) {
+  .header__portadaStudios {
+    margin-right: 0;
+    margin-left: 0;
+    background-position: center;
+  }
+  .header__portadaStudios .header__tituloYParrafoStudios .header__tituloStudios {
+    margin-left: 0;
+    font-size: 36px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .header__portadaStudios .header__tituloYParrafoStudios .header__parrafoStudios {
+    margin-left: 0;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .header__portadaStudios .header__tituloYParrafoStudios .header__botonStudios {
+    margin-left: 7rem;
+    margin-right: 0;
+    justify-content: center;
+  }
+}
 .header__portadaSpa {
   background-image: url(../images/PORTADASPA.jpg);
   background-size: cover;
@@ -259,7 +329,7 @@
   background-color: #990f0f;
 }
 
-.main__galeriaSpa .main__parrafo1 {
+.main__galeriaSpa .main__parrafo1, .main__galeriaSpa .main__parrafo3, .main__galeriaSpa .main__parrafo2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -272,66 +342,76 @@
   margin-left: 4rem;
   color: #990f0f;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 30px;
 }
-.main__galeriaSpa .main__imagenSpa1 {
+.main__galeriaSpa .main__imagenSpa1, .main__galeriaSpa .main__imagenSpa5, .main__galeriaSpa .main__imagenSpa3 {
   width: 700px;
   height: 500px;
   padding: 2rem;
   border-radius: 8px;
 }
-.main__galeriaSpa .main__imagenSpa2 {
+.main__galeriaSpa .main__imagenSpa2, .main__galeriaSpa .main__imagenSpa4 {
   width: 100%;
   height: 600px;
   object-fit: cover;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.336);
-}
-.main__galeriaSpa .main__imagenSpa3 {
-  width: 700px;
-  height: 500px;
-  padding: 2rem;
-  border-radius: 8px;
 }
 .main__galeriaSpa .main__parrafo2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 500px;
-  padding: 2rem;
-  text-align: center;
-  margin-top: 2rem;
-  margin-left: 4rem;
-  color: #990f0f;
   font-size: 21px;
-  line-height: 2rem;
-  font-weight: bolder;
-}
-.main__galeriaSpa .main__imagenSpa4 {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.336);
+  margin-top: 2rem;
 }
 .main__galeriaSpa .main__parrafo3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 500px;
-  padding: 2rem;
-  text-align: center;
-  margin-top: 4rem;
-  margin-left: 4rem;
+  font-size: 16px;
 }
-.main__galeriaSpa .main__imagenSpa5 {
-  width: 700px;
-  height: 500px;
-  padding: 2rem;
+@media only screen and (max-width: 500px) {
+  .header__portadaSpa {
+    margin-right: 0;
+    margin-left: 0;
+    background-position: center;
+  }
+  .header__portadaSpa .header__lineaYTituloSpa .header__tituloSpa {
+    margin-left: 0;
+    font-size: 36px;
+    flex-wrap: wrap;
+  }
+  .header__portadaSpa .header__lineaYTituloSpa .header__lineaLargaDer {
+    margin-right: 2rem;
+  }
+  .main__galeriaSpa .main__parrafo1, .main__galeriaSpa .main__parrafo2, .main__galeriaSpa .main__parrafo3 {
+    font-size: 22px;
+    margin-left: 0;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .main__galeriaSpa .main__imagenSpa1, .main__galeriaSpa .main__imagenSpa3, .main__galeriaSpa .main__imagenSpa5 {
+    display: none;
+  }
+  .main__galeriaSpa .main__imagenSpa2, .main__galeriaSpa .main__imagenSpa4 {
+    width: 100%;
+    height: auto;
+  }
+  .main__galeriaSpa .main__imagenSpa3 {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  .main__galeriaSpa .main__parrafo2 {
+    font-size: 16px;
+    margin-left: 0;
+    width: 100%;
+  }
+  .main__galeriaSpa .main__parrafo3 {
+    font-size: 16px;
+    margin-left: 0;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .main__galeriaSpa .main__imagenSpa5 {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
 }
-
 .header__portadaContacto {
   background-image: url(../images/patiogodoy.jpg);
   background-size: cover;

@@ -36,3 +36,29 @@
         margin-left:11rem;
     }
 }
+@media only screen and (max-width: 500px) {
+        .header__portadaStudios{
+            margin-right:0;
+            margin-left:0;
+            background-position: center;
+            .header__tituloYParrafoStudios{
+                .header__tituloStudios{
+                    margin-left: 0;
+                    font-size: 36px;
+                    flex-wrap: wrap;
+                    width: 100%;
+                }
+                .header__parrafoStudios{
+                    margin-left: 0;
+                    flex-wrap: wrap;
+                    width: 100%;
+                }
+                .header__botonStudios{
+                    margin-left: 7rem;
+                    margin-right: 0;
+                    justify-content: center;
+                }
+            }   
+        }
+    }
+
