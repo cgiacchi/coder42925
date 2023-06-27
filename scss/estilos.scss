@@ -49,6 +49,7 @@ a{
     list-style-type: none;
     color:white;
     margin-top: 10px;
+    @include animation-delay;
     .header__logo{
         @include flex-row-center;
         flex-wrap: nowrap;
@@ -61,6 +62,7 @@ a{
 }
 .header__disponibilidad{
     @include flex-row-center;
+    @include animation-delay;
     flex-wrap: nowrap;
     align-items: flex-end;
     text-align: center;
@@ -154,6 +156,10 @@ footer{
     flex-wrap: wrap;
     align-items: flex-end;
     color: map-get($color,rojo);
+    .animate__fadeIn{
+        animation-delay:2;
+        animation-name: frase-fade;
+    }
     .main__frase{
         margin-top: 5rem;
         margin-left: 3rem;
@@ -190,6 +196,7 @@ footer{
         text-align: center;
         font-size:  map-get($font-style,tamaño-parrafo);
         line-height: 1rem;
+        width: 330px;
     }
     .main__imagenSuites{
         width: 20rem;
@@ -206,10 +213,16 @@ footer{
         font-size: 14px;
         border-radius: 10px;
         font-weight:  map-get($font-style,negrita);
-        margin-left:2.5rem;
+        transition: height 1s;
+        &:hover{
+            font-size: 20px;
+            font-weight: bolder;
+        }
     }
 }
 .main__studios{
+    animation-duration: 5s;
+    animation-name: mainstudios-animation;
     .main__imagenStudios{
         margin-top:2rem;
         width: 20rem;
@@ -254,7 +267,11 @@ footer{
         font-size: 14px;
         border-radius: 10px;
         font-weight:  map-get($font-style,negrita);
-        margin-left:2.5rem;
+        transition: height 2s;
+        &:hover{
+            font-size: 20px;
+            font-weight: bolder;
+        }
     }
 }
 

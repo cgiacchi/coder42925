@@ -1,7 +1,7 @@
 .header__portadaStudios{
     background-image: url(../images/piletagodoy.jpg);
     background-size: cover;
-    z-index:-100;
+    z-index:100;
     position:sticky;
     .header__tituloStudios{
         @include flex-row-center;

@@ -13,13 +13,16 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Castoro:ital@0;1&family=Comfortaa:wght@300;400;500;700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     </head>
     <body>
         <div class="container-fluid">
             <header>
                 <div class="row header__portadaContacto">
                     <div class="col-lg-12">
-                        <nav class="header__menu">
+                        <nav class="header__menu" data-aos="zoom-in">
                             <ul class="header__nav">
                                 <li><a class="navbar-brand header__nav" href="../pages/suites.html">SUITES</a></li>
                                 <li><a class="navbar-brand header__nav" href="../pages/studios.html">STUDIOS</a></li>
@@ -30,19 +33,21 @@
                         </nav>
                     </div>
                     <div class="col-lg-6">
-                        <div class="header__lineas">    
+                        <div class="header__lineas" data-aos="zoom-in">    
                             <hr class="header__lineaLargaIzq">
                             <hr class="header__lineaCortaIzq">
                             <hr class="header__lineaLargaDer">
                             <hr class="header__lineaLargaDer">
                         </div>
-                    <h1 class="header__tituloContacto">SOBRE NOSOTROS</h1>
+                    <h1 class="header__tituloContacto" data-aos="zoom-in">SOBRE NOSOTROS</h1>
                     </div>
                 </div>    
             </header>
             <main>
                 <div class="row">
-                    <div class="main__seccionMapaSuites">
+                    <div class="main__seccionMapaSuites" data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" >
                         <div class="col-lg-8">
                             <div class="main__lineaYTituloMapaSuites">
                                 <hr class="main__lineaMapaSuites">
@@ -54,7 +59,9 @@
                         <p class="main__parrafoMapaSuites">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis itaque assumenda, fuga consequuntur nemo unde voluptas ipsam fugit in consectetur quibusdam hic voluptates officia eum? Magni exercitationem veritatis, maxime officia saepe vitae amet a odit perferendis qui ab mollitia suscipit cumque molestiae deleniti laboriosam voluptatem cum dolores esse nobis. Ratione!</p>
                         </div>
                     </div>    
-                    <div class="main__seccionMapaStudios">
+                    <div class="main__seccionMapaStudios" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" >
                         <div class="col-lg-4">
                         <p class="main__parrafoMapaStudios">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis itaque assumenda, fuga consequuntur nemo unde voluptas ipsam fugit in consectetur quibusdam hic voluptates officia eum? Magni exercitationem veritatis, maxime officia saepe vitae amet a odit perferendis qui ab mollitia suscipit cumque molestiae deleniti laboriosam voluptatem cum dolores esse nobis. Ratione!</p>
                         </div>
@@ -68,78 +75,90 @@
                     </div>
                 </div>
             </main>
-            <div class="row">
-                <div class="col-lg-12 section__contactanosForm">
-                    <section class="section__contactanos">
-                        <h3 class="section__tituloContactanos">Contactanos</h3>
-                        <form class="section__cuerpoContactanos" action="">
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" name="nombre" id="nombre">
-                            <label for="mail">Correo electronico:</label>
-                            <input type="email" name="mail" id="mail">
-                            <label for="mensaje">Deja tu mensaje </label>
-                            <textarea name="mensaje" id="mensaje" cols="30" rows="10"> </textarea>
-                            <input type="submit" class="section__botonContactanos" value="Suscribirse">    
-                        </form>
-                    </section> 
-                </div>
-            </div>
+            
             <div class="row">
                 <div class="col-lg-12">
-                    <section class="section__faq">
-                        <h3>FAQ</h3>
-                    <!-- <div class="section__cuerpoFaq">
-                        <hr>
-                    <div class="section__faq">
-                        <div class="section__pregunta">1.What is HTML?</div>
-                        <div class="section__respuesta">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.</div>
-                    </div>
-                    <div class="section__faq">
-                        <div class="section__pregunta">2.What is CSS?</div>
-                        <div class="section__respuesta">CSS stands for Cascading Style Sheets. It is a style sheet language which is used to describe the look and formatting of a document written in markup language. </div>
-                    </div>
-                    <div class="section__faq">
-                        <div class="section__pregunta">3.What is JAVASCRIPT?</div>
-                        <div class="section__respuesta">JavaScript (js) is a light-weight object-oriented programming language which is used by several websites for scripting the webpages</div>
-                    </div>
-                    <hr>
-                    </div> -->
+                    <section class="section__faq" data-aos="fade-in" >
                         <div class="accordion accordion-flush section__cuerpoFaq" id="accordionFlushExample">
                         <hr>
                             <div class="accordion-item">
                             <h3 class="accordion-header">
                             <button class="accordion-button collapsed section__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Accordion Item #1
+                            ¿Cuál es el horario de check in y cuál el de check out?
                             </button>
                             </h3>
                                 <div id="flush-collapseOne" class=" section__pregunta accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body section__respuesta">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                    <div class="accordion-body section__respuesta">El horario de check in es 15hs y el horario de check out es 11hs.</div>
                                 </div>
                             </div>
                             <div class="accordion-item section__pregunta">
                                 <h3 class="accordion-header">
                                 <button class="accordion-button collapsed section__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                    Accordion Item #2
+                                    ¿Realizan limpieza diaria?
                                 </button>
                                 </h3>
                                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body section__respuesta">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                    <div class="accordion-body section__respuesta">El alojamiento facilita toallas y ropa de cama.
+                                        No de proporciona servicio de limpieza durante la estadía. Este servicio debe solicitarse en la recepción al menos 1 día antes de la llegada y conlleva un adicional.</div>
                                 </div>
                             </div>
                             <div class="accordion-item section__pregunta">
                                 <h3 class="accordion-header">
                                 <button class="accordion-button collapsed section__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                    Accordion Item #3
+                                    ¿Puedo ingresar fuera del horario de recepción?
                                 </button>
                                 </h3>
                                 <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body section__respuesta">Nuestro horario de ingreso es a las 15:00 hs. En el caso de estar lista la habitación antes de ese horario con gusto te recibiremos antes, en el caso de no estar lista, contamos con servicio de guardado de equipaje hasta el horario de check in.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item section__pregunta">
+                                <h3 class="accordion-header">
+                                <button class="accordion-button collapsed section__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    ¿Qué medios de pago aceptan?
+                                </button>
+                                </h3>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body section__respuesta">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
                                 </div>
                             </div>
-                        </div>
-                    </section>
+                            <div class="accordion-item section__pregunta">
+                                <h3 class="accordion-header">
+                                <button class="accordion-button collapsed section__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                    ¿Es Pet-friendly?
+                                </button>
+                                </h3>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body section__respuesta">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                </div>
+                            </div>
+                            <hr>
+                        </section>
+                    </div>
                 </div>
-            </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="section__frase" data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" >Combinacion perfecta entre calidad y ubicación. Experimenta la comodidad y el confort de nuestros apartamentos.</h3>                </div>
+                    <div class="col-lg-6 section__contactanosForm" data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                        <section class="section__contactanos">
+                            <h3 class="section__tituloContactanos">Contactanos</h3>
+                            <form class="section__cuerpoContactanos" action="">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" name="nombre" id="nombre">
+                                <label for="mail">Correo electronico:</label>
+                                <input type="email" name="mail" id="mail">
+                                <label for="mensaje">Deja tu mensaje </label>
+                                <textarea name="mensaje" id="mensaje" cols="30" rows="10"> </textarea>
+                                <input type="submit" class="section__botonContactanos" value="Suscribirse">    
+                            </form>
+                        </section> 
+                    </div>
+                    <hr>
+                </div>
             <footer>
                 <div class="row">
                     <div class="col-lg-6">
@@ -176,6 +195,8 @@
             </footer>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script> 
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script> AOS.init();</script>
         </div>   
     </body>
 </html> 

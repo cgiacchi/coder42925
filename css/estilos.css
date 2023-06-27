@@ -8,7 +8,7 @@
 .header__portadaSuites {
   background-image: url(../images/portadapagsuites.jpg);
   background-size: cover;
-  z-index: -100;
+  z-index: 100;
   position: sticky;
 }
 .header__portadaSuites .header__tituloSuites {
@@ -224,7 +224,7 @@
 .header__portadaStudios {
   background-image: url(../images/piletagodoy.jpg);
   background-size: cover;
-  z-index: -100;
+  z-index: 100;
   position: sticky;
 }
 .header__portadaStudios .header__tituloStudios {
@@ -428,20 +428,19 @@
 
 .main__seccionMapaSuites {
   display: flex;
-  background-color: #640404;
 }
 .main__seccionMapaSuites .main__lineaYTituloMapaSuites {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-flow: nowrap;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-end;
+  color: #640404;
 }
 .main__seccionMapaSuites .main__lineaYTituloMapaSuites .main__lineaMapaSuites {
   display: flex;
   height: 2px;
   width: 60%;
-  color: white;
   margin-top: 0.5rem;
 }
 .main__seccionMapaSuites .main__lineaYTituloMapaSuites .main__tituloMapaSuites {
@@ -449,37 +448,46 @@
   align-items: flex-start;
   font-size: 2rem;
   margin-top: 1.5rem;
-  color: white;
 }
 .main__seccionMapaSuites .main__mapaSuites {
   padding: 1rem;
-  width: 100%;
+  width: 110%;
 }
 .main__seccionMapaSuites .main__parrafoMapaSuites {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
-  height: 30rem;
+  flex-flow: column wrap;
+  align-items: flex-end;
+  width: 80%;
+  height: auto;
+  z-index: 10;
+  font-size: 14px;
   color: white;
-  background-color: rgba(5, 21, 34, 0.404);
+  margin-top: 9rem;
+  padding: 1.5rem;
+  background-color: #640404;
   box-shadow: 0px 0px 20px #2c2323;
 }
 
 .main__seccionMapaStudios {
   display: flex;
+  background-color: #640404;
 }
 .main__seccionMapaStudios .main__parrafoMapaStudios {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 30rem;
-  color: white;
-  background-color: rgba(5, 21, 34, 0.404);
-  box-shadow: 0px 0px 20px #2c2323;
+  width: 90%;
+  height: auto;
+  z-index: 1000;
+  font-size: 14px;
+  color: 6404040;
+  background-color: white;
+  margin-top: 10rem;
+  margin-left: 7rem;
+  padding: 1.5rem;
+  border-radius: 10px;
 }
 .main__seccionMapaStudios .main__lineaYTituloMapaStudios {
   display: flex;
@@ -492,7 +500,7 @@
   display: flex;
   height: 2px;
   width: 60%;
-  color: #640404;
+  color: white;
   margin-top: 0.5rem;
 }
 .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__tituloMapaStudios {
@@ -500,31 +508,44 @@
   align-items: flex-start;
   font-size: 2rem;
   margin-top: 1.5rem;
-  color: #640404;
+  color: white;
 }
 .main__seccionMapaStudios .main__mapaStudios {
   padding: 1rem;
   width: 100%;
+  z-index: -100;
+}
+
+.section__frase {
+  flex-wrap: wrap;
+  align-items: center;
+  width: 600px;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 8rem;
+  margin-left: 4rem;
+  color: #990f0f;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 4rem;
 }
 
 .section__contactanosForm {
-  background: linear-gradient(to right, #640404 0%, #990f0f 100%);
   font-size: 12px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
-  font-size: 16px;
 }
 
 .section__contactanos {
-  width: 550px;
-  height: 550px;
+  width: 500px;
+  height: 450px;
   background: #e6e6e6;
   border-radius: 8px;
   box-shadow: 0 0 40px -10px #000;
   margin: calc(50vh - 220px) auto;
-  padding: 20px 30px;
+  padding: 10px 20px;
   max-width: calc(100vw - 40px);
   box-sizing: border-box;
 }
@@ -534,7 +555,7 @@
   padding-bottom: 10px;
   width: 180px;
   color: #640404;
-  border-bottom: 3px solid #640404;
+  border-bottom: 2px solid #640404;
 }
 
 .section__cuerpoContactanos {
@@ -551,7 +572,7 @@
   border: 2px solid #640404;
 }
 .section__cuerpoContactanos #mensaje {
-  line-height: 20px;
+  line-height: 10px;
 }
 .section__cuerpoContactanos .section__botonContactanos {
   display: flex;
@@ -572,40 +593,28 @@
   letter-spacing: 1.4px;
 }
 
-.section__faq h1 {
+.section__faq {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.section__faq .accordion-flush {
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
-  background-color: #991515;
-  padding: 10px;
-  font-size: 70px;
-  color: white;
-  font-weight: 300;
-  text-align: center;
+  justify-content: center;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
-.section__faq .accordion .accordion-flush {
-  margin-top: 40px;
-}
-.section__faq .accordion .accordion-flush .accordion-item {
+.section__faq .accordion-flush .accordion-item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.section__faq .accordion .accordion-flush .accordion-item .accordion-header {
-  cursor: pointer;
-  transition: all 0.3s;
-}
-.section__faq .accordion .accordion-flush .accordion-item .accordion-header:hover {
-  scale: 110%;
-}
-.section__faq .accordion .accordion-flush .accordion-item .accordion-body {
-  padding: 10px;
-  pointer-events: none;
-  opacity: 0;
-  height: 0;
-  transition: all 0.3s;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 html {
@@ -656,6 +665,7 @@ a {
   list-style-type: none;
   color: white;
   margin-top: 10px;
+  animation-delay: 5s;
 }
 .header__nav .header__logo {
   display: flex;
@@ -673,6 +683,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  animation-delay: 5s;
   flex-wrap: nowrap;
   align-items: flex-end;
   text-align: center;
@@ -784,6 +795,10 @@ footer .footer__wsp .footer__wspImagen {
   align-items: flex-end;
   color: #990f0f;
 }
+.frase .animate__fadeIn {
+  animation-delay: 2;
+  animation-name: frase-fade;
+}
 .frase .main__frase {
   margin-top: 5rem;
   margin-left: 3rem;
@@ -819,6 +834,7 @@ footer .footer__wsp .footer__wspImagen {
   text-align: center;
   font-size: 16px;
   line-height: 1rem;
+  width: 330px;
 }
 .main__suites .main__imagenSuites {
   width: 20rem;
@@ -837,9 +853,17 @@ footer .footer__wsp .footer__wspImagen {
   font-size: 14px;
   border-radius: 10px;
   font-weight: bold;
-  margin-left: 2.5rem;
+  transition: height 1s;
+}
+.main__suites .main__botonDescubrirSuites:hover {
+  font-size: 20px;
+  font-weight: bolder;
 }
 
+.main__studios {
+  animation-duration: 5s;
+  animation-name: mainstudios-animation;
+}
 .main__studios .main__imagenStudios {
   margin-top: 2rem;
   width: 20rem;
@@ -890,7 +914,11 @@ footer .footer__wsp .footer__wspImagen {
   font-size: 14px;
   border-radius: 10px;
   font-weight: bold;
-  margin-left: 2.5rem;
+  transition: height 2s;
+}
+.main__studios .main__botonDescubrirStudios:hover {
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 .section__sobreNosotros {

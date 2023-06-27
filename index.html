@@ -12,13 +12,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Castoro:ital@0;1&family=Comfortaa:wght@300;400;500;700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"></head>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <body>
         <div class="container-fluid">
             <header>
                 <div class="row">
                     <div class="col-lg-12">
                         <video  class="header__video" source src="images/suitesreel.mp4" autoplay looped muted type="video/mp4"></video>
-                        <nav class="header__menu">
+                        <nav class="header__menu" data-aos="zoom-in">
                             <ul class="header__nav">
                                 <li><a class="navbar-brand header__nav" href="pages/suites.html">SUITES</a></li>
                                 <li><a class="navbar-brand header__nav" href="pages/studios.html">STUDIOS</a></li>
@@ -31,7 +33,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">  
-                        <div class="header__disponibilidad">
+                        <div class="header__disponibilidad" data-aos="zoom-in">
                             <label class="header__disponibilidad" for="edificio"></label>
                                 <select class="header__boton" name="edificio" id="edificio">
                                     <option value="Suites">Syrah Suites</option>
@@ -49,7 +51,7 @@
             <main>
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="frase">
+                        <div class="frase" data-aos="zoom-in">
                             <h1 class="main__frase">Ubicados en el corazón de Palermo, centro turístico, comercial y cultural del país.</h1>        
                         </div>
                     </div>
@@ -58,7 +60,7 @@
                     <div class="col-lg-2">
                     </div>
                     <div class="col-lg-4">
-                        <div class="main__suites">
+                        <div class="main__suites" data-aos="fade-right">
                             <div class="main__tituloYLineaSuites">
                                 <hr class="main__lineaSuites">
                                 <h2 class="main__tituloSuites">SYRAH SUITES</h2>
@@ -70,7 +72,7 @@
                         </div>
                     </div>    
                     <div class="col-lg-4"> 
-                        <div class="main__studios">
+                        <div class="main__studios" data-aos="fade-left">
                             <!-- <hr id="main__lineaVerticalCorta"> -->
                             <img class="main__imagenStudios" src="images/001.jpg" alt="Syrah Studios portada">
                             <div class="main__tituloYLineaStudios">
@@ -87,7 +89,7 @@
             </main>
             <!-- SOBRE NOSOTROS -->
             <section>
-                <div class="row section__sobreNosotros">
+                <div class="row section__sobreNosotros" data-aos="zoom-in">
                     <div class="col-lg-6">
                     <!-- <hr id="section__lineaHorizontalLarga">
                     <hr id="section__lineaHorizontalCorta">
@@ -105,9 +107,9 @@
                 </div>
             </section>
             <!-- SPA -->
-            <section class="section__spa">
+            <section class="section__spa" data-aos="zoom-in">
                 <div class="row">
-                    <div class="col-lg-6 section__tituloSpa">
+                    <div class="col-lg-6 section__tituloSpa" >
                         <h3 class="section__tituloSpa">VENI A DISFRUTAR Y RELAJARTE EN NUESTRO SPA</h3>
                     </div>
                     <div class="col-lg-6">
@@ -154,6 +156,8 @@
             </footer>
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script> AOS.init();</script>
         </div>
     </body>
 </html>

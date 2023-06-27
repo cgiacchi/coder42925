@@ -70,3 +70,6 @@ $font-style:(
     margin-right:1rem;
 }
 
+@mixin animation-delay{
+	animation-delay: 5s;
+}
