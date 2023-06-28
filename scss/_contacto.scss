@@ -8,7 +8,7 @@
         margin-left:30rem;
         padding-top: 9rem;
         padding-bottom: 15rem;
-        color:#990f0f;
+        color: map-get($color,rojo);
     }
 }
 
@@ -20,7 +20,7 @@
         flex-flow: nowrap;
         justify-content: flex-end;
         align-items: flex-end;
-        color: #640404;
+        color: map-get($color,bordo);
         .main__lineaMapaSuites{
             display: flex;
             height: 2px;
@@ -49,14 +49,14 @@
         color:white;
         margin-top: 9rem;
         padding: 1.5rem;
-        background-color:#640404;
+        background-color:map-get($color,bordo);
         box-shadow: 0px 0px 20px #2c2323;
     }
 } 
 
 .main__seccionMapaStudios{
     display: flex;
-    background-color:#640404;
+    background-color:map-get($color,bordo);
     .main__parrafoMapaStudios{
         position: relative;
         @include flex-row-center;
@@ -65,32 +65,22 @@
         height: auto;
         z-index: 1000;
         font-size: 14px;
-        color: 6404040;
+        color: map-get($color,bordo);
         background-color: white;
         margin-top: 10rem;
         margin-left: 7rem;
         padding: 1.5rem;
-        border-radius: 10px;
     }
     .main__lineaYTituloMapaStudios{
-        display: flex;
-        flex-direction: row;
-        flex-flow: nowrap;
+        @extend .main__lineaYTituloMapaSuites;
         justify-content: center;
-        align-items: flex-end;
         .main__lineaMapaStudios{
-            display: flex;
-            height: 2px;
-            width: 60%;
-            color:white;
-            margin-top: 0.5rem;
+            @extend .main__lineaMapaSuites;
+            color:map-get($color,colorclaro);
         }
         .main__tituloMapaStudios{
-            display: flex;
-            align-items: flex-start;
-            font-size: 2rem;
-            margin-top:1.5rem;
-            color: white;
+            @extend .main__tituloMapaSuites;
+            color: map-get($color,colorclaro);
         }
     }
     .main__mapaStudios{
@@ -108,22 +98,21 @@
     text-align: center;
     margin-top:8rem;
     margin-left: 4rem;
-    color: #990f0f;
-    font-weight: bold;
-    font-size: 36px;
+    color: map-get($color,bordo);
+    font-weight: map-get($font-style,negrita);
+    font-size: map-get($color,tamaño-subtitulo);
     line-height: 4rem;
 }
 .section__contactanosForm{
+    @include flex-row-center;
+    flex-wrap: wrap;
     font-size: 12px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
     align-content: center;
 }
     .section__contactanos{
     width:500px;
     height:450px;
-    background:#e6e6e6;
+    background:map-get($color,colorclaro);
     border-radius:8px;
     box-shadow:0 0 40px -10px #000;
     margin:calc(50vh - 220px) auto;
@@ -135,7 +124,7 @@
         margin:10px 0;
         padding-bottom:10px;
         width:180px;
-        color:#640404;
+        color:map-get($color,bordo);
         border-bottom: 2px solid #640404;
     }
     .section__cuerpoContactanos{
@@ -146,8 +135,8 @@
         width:100%;
         padding:10px;
         box-sizing:border-box;
-        font-size:16px;
-        color:#640404;
+        font-size:map-get($font-style,tamaño-parrafo);
+        color:map-get($color,bordo);
         padding:8px 12px;
         border:2px solid #640404;
         #mensaje{
@@ -159,16 +148,16 @@
             justify-content: center;
             flex-wrap: nowrap;
             align-items: center;
-            background-color: #640404;
+            background-color: map-get($color,bordo);
             border: 2px solid;
-            color: white;
+            color: map-get($color,colorclaro);
             padding: 15px 32px;
             text-align: center;
             font-size: 14px;
             border-radius: 28px;
             margin-top: 1rem;
             margin-right: 15rem;
-            font-weight: 700;
+            font-weight: map-get($font-style,w-700);
             letter-spacing: 1.4px;
         }
     }
@@ -198,3 +187,52 @@
         }
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .header__portadaContacto{
+        margin-right:0;
+        margin-left:0;
+        background-position: center;
+            .header__tituloContacto{
+                display: flex;
+                margin-left: 0;
+                font-size: 36px;
+                flex-wrap: wrap;
+            }
+            
+        }   
+        .main__seccionMapaSuites{
+            display: block;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .main__mapaSuites{
+                width: 80%;
+                margin-left: 2rem;
+                margin-right: 0;
+            }
+            .main__parrafoMapaSuites{
+                margin-top: 0;
+                margin-left: 2rem;
+                margin-right: 0;
+            }
+        }
+        .main__seccionMapaStudios{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .main__mapaStudios{
+                display: flex;
+                width: 80%;
+                margin-left: 2rem;
+                margin-right: 0;
+                order:1;
+            }
+            .main__parrafoMapaStudios{
+                display: flex;
+                margin-top: 0;
+                margin-left: 2rem;
+                margin-right: 0;
+                order:2;
+            }
+        }
+    }

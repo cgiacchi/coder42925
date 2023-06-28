@@ -47,7 +47,7 @@ a{
     font-size: map-get($font-style,tamaño-nav);
     font-weight:  map-get($font-style,negrita);
     list-style-type: none;
-    color:white;
+    color:map-get($color,colorclaro);
     margin-top: 10px;
     @include animation-delay;
     .header__logo{
@@ -105,9 +105,8 @@ footer{
             margin-right: 1rem;
         }
         .footer__positionIg{
-            display: flex;
-            width: 40px;
-            height: 40px;
+            @extend .footer__positionFb;
+            margin-right: 0;
         }
     }
     .footer__newsletter{
@@ -247,27 +246,29 @@ footer{
         }
     }
     .main__parrafoStudios{
-        @include flex-row-center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         flex-wrap: nowrap;
         color: black;
-        width:20rem;
+        width: 20rem;
         text-align: center;
-        font-size:  map-get($font-style,tamaño-parrafo);
+        font-size: 16px;
         line-height: 0.9rem;
         margin-bottom: 0.9rem;
     }
     .main__botonDescubrirStudios{
         @include flex-row-center;
         flex-wrap: wrap;
-        align-content: center;
-        margin-right: 5rem;
-        color:map-get($color,rojo);
+        color: map-get($color,rojo);
         padding: 15px 32px;
         text-decoration: none;
+        text-align: center;
         font-size: 14px;
         border-radius: 10px;
         font-weight:  map-get($font-style,negrita);
-        transition: height 2s;
+        transition: height 1s;
+        margin-right: 5rem;
         &:hover{
             font-size: 20px;
             font-weight: bolder;
@@ -289,7 +290,7 @@ footer{
         margin:1rem 2rem 0rem 4rem;
         font-size:  map-get($font-style,tamaño-subtitulo);
         line-height: 3rem;
-        color: white;
+        color: map-get($color, colorclaro);
     }
     .section__parrafoSobreNosotros{
         @include flex-row-center;
@@ -298,7 +299,7 @@ footer{
         font-size:  map-get($font-style,tamaño-parrafo);
         line-height: 2rem;
         padding: 0rem 3rem 0rem 4rem;
-        color: white;
+        color: map-get($color, colorclaro);
     }
 }
 
@@ -479,4 +480,137 @@ footer{
             }
         }
     }
+}
+
+@media only screen and (min-width: 500px) and (max-width:768px){
+    body{
+        width: 100% !important;
+    }
+    .header__nav{
+        font-size: 16px;
+        margin-right: 0;
+        .header__logo{
+            width: 5rem;
+            height: 5rem;
+        }
+    }
+    .header__disponibilidad{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top:9rem;
+        margin-bottom:0rem;
+        .header__boton{
+            padding: 12px 12px;
+            font-size: 12px;
+            margin-right: 0;
+            }
+        }
+    .frase{
+        .main__frase{
+            display: flex;
+            font-size: 26px;
+            justify-content: center;
+            text-align: center;
+            margin-top:2rem;
+            margin-left: 1rem;
+        }
+    }
+    .main__suites{
+        @include flex-row-center;
+        margin-top:2rem;
+        flex-flow: column wrap;
+        .main__tituloYLineaSuites{
+            margin-left:8rem;
+            .main__lineaSuites{
+                width: 150px;
+            }
+        }
+        .main__parrafoSuites{
+            font-size: 15px;
+            line-height: 1.5rem;
+            flex-flow:row wrap;
+            width: 60%;
+            margin-left: 8rem;
+        }
+        .main__imagenSuites{
+            @include flex-row-center;
+            flex-wrap: wrap;
+            width: 60%;
+            height: auto;
+            margin-left:8rem;
+
+        }
+        .main__botonDescubrirSuites{
+            margin-left: 0.5rem;
+        }
+    }
+    .main__studios{
+        @include flex-row-center;
+        margin-top:2rem;
+        flex-flow: row wrap;
+        margin-right: 2rem;
+        .main__tituloYLineaStudios{
+            .main__lineaStudios{
+                width: 150px;
+            }
+        }
+        .main__parrafoStudios{
+            margin-left:1rem;
+            margin-right: 1rem;
+            font-size: 15px;
+            line-height: 1.5rem;
+            flex-flow:row wrap;
+            width: 70%
+        }
+        .main__imagenStudios{
+            @include flex-row-center;
+            flex-wrap: wrap;
+            width: 65%;
+            height: auto;
+            margin-left: 0;
+        }
+        .main__botonDescubrirStudios{
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    .section__sobreNosotros{
+        .section__imagen{
+            display: flex;
+            flex-flow: row wrap;
+            width: 100%;
+        }
+        .section__tituloSobreNosotros{
+            font-size: 26px;
+        }   
+        .section__parrafoSobreNosotros{
+            font-size: 14px;
+        }
+    }
+    .section__spa{
+        .section__tituloSpa{
+            font-size: 32px;
+            margin-top:2rem;
+        }
+        .section__parrafoSpa{
+            margin-top: 0;
+            margin-left: 0;
+            width: auto;
+            font-size: 16px;
+        }
+        .section__botonSpa--modifier{
+            margin-left: 0;
+        }
+    }
+    footer{
+        .footer__informacion{
+            justify-content: center;
+            margin-left: 10rem;
+        }
+        .footer__redes{
+            margin-left: 10rem;
+        }
+    }  
 }

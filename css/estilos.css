@@ -1,6 +1,6 @@
 @import "https://unpkg.com/transition-style";
 .tituloDeptos, .main__izquierda .main__lineaYTituloIzquierda .main__tituloIzquierda, .main__derecha .main__lineaYTituloDerecha .main__tituloDerecha, .main__izquierda .main__lineaYTituloDerecha .main__tituloDerecha {
-  font-size: 32px;
+  font-size: 28px;
   margin-top: 1rem;
   margin-right: 1rem;
 }
@@ -122,6 +122,28 @@
   margin-left: 1rem;
   color: black;
 }
+.main__derecha .main__iconosGeneral, .main__derecha .main__izquierda .main__iconosGeneralIzquierda, .main__izquierda .main__derecha .main__iconosGeneralIzquierda, .main__izquierda .main__iconosGeneral, .main__izquierda .main__iconosGeneralIzquierda {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-end;
+  margin-top: 2rem;
+}
+.main__derecha .main__iconosGeneral #main__iconoPersona, .main__izquierda .main__iconosGeneral #main__iconoPersona, .main__izquierda .main__iconosGeneralIzquierda #main__iconoPersona {
+  margin-right: 0;
+}
+.main__derecha .main__iconosGeneral .main__icono, .main__izquierda .main__iconosGeneral .main__icono, .main__izquierda .main__iconosGeneralIzquierda .main__icono, .main__izquierda .main__iconosGeneralIzquierda .main__iconoIzquierda {
+  display: flex;
+  margin: 1.5rem;
+  width: 40px;
+}
+.main__derecha .main__iconosGeneral .main__personas, .main__izquierda .main__iconosGeneral .main__personas, .main__izquierda .main__iconosGeneralIzquierda .main__personas {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  font-size: 25px;
+  margin-top: 10px;
+}
 
 .main__izquierda {
   background-color: #640404;
@@ -155,6 +177,12 @@
   border-width: 1px;
   border-style: solid;
   background-color: #640404;
+}
+.main__izquierda .main__iconosGeneralIzquierda {
+  color: white;
+}
+.main__izquierda .main__iconosGeneralIzquierda .main__iconoIzquierda {
+  color: white;
 }
 .main__izquierda .main__imagenIzquierda {
   display: flex;
@@ -219,6 +247,28 @@
   }
   .main__izquierda .main__lineaYTituloIzquierda .main__tituloIzquierda {
     font-size: 26px;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+  .main__tipos .main__tiposNombres {
+    font-size: 16px;
+  }
+  .main__derecha, .main__izquierda {
+    padding-left: 0;
+  }
+  .main__derecha .main__imagenDerecha, .main__izquierda .main__imagenDerecha {
+    width: 100%;
+    height: auto;
+  }
+  .main__izquierda {
+    padding-left: 0;
+  }
+  .main__izquierda .main__parrafoIzquierda {
+    margin-left: 1rem;
+  }
+  .main__izquierda .main__imagenIzquierda {
+    width: 100%;
+    height: auto;
   }
 }
 .header__portadaStudios {
@@ -313,7 +363,7 @@
 }
 .header__portadaSpa .header__lineaYTituloSpa .header__tituloSpa {
   align-content: center;
-  font-size: 3rem;
+  font-size: 48px;
   padding-left: 2rem;
   padding-right: 2rem;
   color: #990f0f;
@@ -361,9 +411,59 @@
   margin-top: 2rem;
 }
 .main__galeriaSpa .main__parrafo3 {
-  font-size: 16px;
+  font-size: 20px;
+  margin-top: 3rem;
 }
 @media only screen and (max-width: 500px) {
+  .header__portadaSpa {
+    margin-right: 0;
+    margin-left: 0;
+    background-position: center;
+  }
+  .header__portadaSpa .header__lineaYTituloSpa .header__tituloSpa {
+    margin-left: 0;
+    font-size: 36px;
+    flex-wrap: wrap;
+  }
+  .header__portadaSpa .header__lineaYTituloSpa .header__lineaLargaDer {
+    margin-right: 2rem;
+  }
+  .main__galeriaSpa .main__parrafo1, .main__galeriaSpa .main__parrafo2, .main__galeriaSpa .main__parrafo3 {
+    font-size: 22px;
+    margin-left: 0;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  .main__galeriaSpa .main__imagenSpa1, .main__galeriaSpa .main__imagenSpa3, .main__galeriaSpa .main__imagenSpa5 {
+    display: none;
+  }
+  .main__galeriaSpa .main__imagenSpa2, .main__galeriaSpa .main__imagenSpa4 {
+    width: 100%;
+    height: auto;
+  }
+  .main__galeriaSpa .main__imagenSpa3 {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  .main__galeriaSpa .main__parrafo2 {
+    font-size: 16px;
+    margin-left: 0;
+    width: 100%;
+  }
+  .main__galeriaSpa .main__parrafo3 {
+    font-size: 16px;
+    margin-left: 0;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .main__galeriaSpa .main__imagenSpa5 {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 768px) {
   .header__portadaSpa {
     margin-right: 0;
     margin-left: 0;
@@ -429,7 +529,7 @@
 .main__seccionMapaSuites {
   display: flex;
 }
-.main__seccionMapaSuites .main__lineaYTituloMapaSuites {
+.main__seccionMapaSuites .main__lineaYTituloMapaSuites, .main__seccionMapaSuites .main__seccionMapaStudios .main__lineaYTituloMapaStudios, .main__seccionMapaStudios .main__seccionMapaSuites .main__lineaYTituloMapaStudios {
   display: flex;
   flex-direction: column;
   flex-flow: nowrap;
@@ -437,13 +537,13 @@
   align-items: flex-end;
   color: #640404;
 }
-.main__seccionMapaSuites .main__lineaYTituloMapaSuites .main__lineaMapaSuites {
+.main__seccionMapaSuites .main__lineaYTituloMapaSuites .main__lineaMapaSuites, .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__seccionMapaSuites .main__lineaYTituloMapaSuites .main__lineaMapaStudios, .main__seccionMapaSuites .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__lineaMapaSuites, .main__seccionMapaSuites .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__lineaMapaStudios, .main__seccionMapaStudios .main__seccionMapaSuites .main__lineaYTituloMapaStudios .main__lineaMapaSuites, .main__seccionMapaStudios .main__seccionMapaSuites .main__lineaYTituloMapaStudios .main__lineaMapaStudios {
   display: flex;
   height: 2px;
   width: 60%;
   margin-top: 0.5rem;
 }
-.main__seccionMapaSuites .main__lineaYTituloMapaSuites .main__tituloMapaSuites {
+.main__seccionMapaSuites .main__lineaYTituloMapaSuites .main__tituloMapaSuites, .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__seccionMapaSuites .main__lineaYTituloMapaSuites .main__tituloMapaStudios, .main__seccionMapaSuites .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__tituloMapaSuites, .main__seccionMapaSuites .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__tituloMapaStudios, .main__seccionMapaStudios .main__seccionMapaSuites .main__lineaYTituloMapaStudios .main__tituloMapaSuites, .main__seccionMapaStudios .main__seccionMapaSuites .main__lineaYTituloMapaStudios .main__tituloMapaStudios {
   display: flex;
   align-items: flex-start;
   font-size: 2rem;
@@ -482,32 +582,19 @@
   height: auto;
   z-index: 1000;
   font-size: 14px;
-  color: 6404040;
+  color: #640404;
   background-color: white;
   margin-top: 10rem;
   margin-left: 7rem;
   padding: 1.5rem;
-  border-radius: 10px;
 }
 .main__seccionMapaStudios .main__lineaYTituloMapaStudios {
-  display: flex;
-  flex-direction: row;
-  flex-flow: nowrap;
   justify-content: center;
-  align-items: flex-end;
 }
 .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__lineaMapaStudios {
-  display: flex;
-  height: 2px;
-  width: 60%;
   color: white;
-  margin-top: 0.5rem;
 }
 .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__tituloMapaStudios {
-  display: flex;
-  align-items: flex-start;
-  font-size: 2rem;
-  margin-top: 1.5rem;
   color: white;
 }
 .main__seccionMapaStudios .main__mapaStudios {
@@ -524,24 +611,24 @@
   text-align: center;
   margin-top: 8rem;
   margin-left: 4rem;
-  color: #990f0f;
+  color: #640404;
   font-weight: bold;
-  font-size: 36px;
   line-height: 4rem;
 }
 
 .section__contactanosForm {
-  font-size: 12px;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
+  font-size: 12px;
   align-content: center;
 }
 
 .section__contactanos {
   width: 500px;
   height: 450px;
-  background: #e6e6e6;
+  background: white;
   border-radius: 8px;
   box-shadow: 0 0 40px -10px #000;
   margin: calc(50vh - 220px) auto;
@@ -589,7 +676,6 @@
   border-radius: 28px;
   margin-top: 1rem;
   margin-right: 15rem;
-  font-weight: 700;
   letter-spacing: 1.4px;
 }
 
@@ -617,6 +703,53 @@
   padding-right: 4rem;
 }
 
+@media only screen and (max-width: 500px) {
+  .header__portadaContacto {
+    margin-right: 0;
+    margin-left: 0;
+    background-position: center;
+  }
+  .header__portadaContacto .header__tituloContacto {
+    display: flex;
+    margin-left: 0;
+    font-size: 36px;
+    flex-wrap: wrap;
+  }
+  .main__seccionMapaSuites {
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .main__seccionMapaSuites .main__mapaSuites {
+    width: 80%;
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+  .main__seccionMapaSuites .main__parrafoMapaSuites {
+    margin-top: 0;
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+  .main__seccionMapaStudios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .main__seccionMapaStudios .main__mapaStudios {
+    display: flex;
+    width: 80%;
+    margin-left: 2rem;
+    margin-right: 0;
+    order: 1;
+  }
+  .main__seccionMapaStudios .main__parrafoMapaStudios {
+    display: flex;
+    margin-top: 0;
+    margin-left: 2rem;
+    margin-right: 0;
+    order: 2;
+  }
+}
 html {
   font-size: 62, 5%;
 }
@@ -727,16 +860,14 @@ footer .footer__redes {
   margin-bottom: 15px;
   margin-left: 5rem;
 }
-footer .footer__redes .footer__positionFb {
+footer .footer__redes .footer__positionFb, footer .footer__redes .footer__positionIg {
   display: flex;
   width: 40px;
   height: 40px;
   margin-right: 1rem;
 }
 footer .footer__redes .footer__positionIg {
-  display: flex;
-  width: 40px;
-  height: 40px;
+  margin-right: 0;
 }
 footer .footer__newsletter {
   display: flex;
@@ -906,15 +1037,15 @@ footer .footer__wsp .footer__wspImagen {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  align-content: center;
-  margin-right: 5rem;
   color: #990f0f;
   padding: 15px 32px;
   text-decoration: none;
+  text-align: center;
   font-size: 14px;
   border-radius: 10px;
   font-weight: bold;
-  transition: height 2s;
+  transition: height 1s;
+  margin-right: 5rem;
 }
 .main__studios .main__botonDescubrirStudios:hover {
   font-size: 20px;
@@ -1144,6 +1275,135 @@ footer .footer__wsp .footer__wspImagen {
   }
   footer .footer__newsletter .footer__formulario .footer__boton {
     margin-right: 0;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+  body {
+    width: 100% !important;
+  }
+  .header__nav {
+    font-size: 16px;
+    margin-right: 0;
+  }
+  .header__nav .header__logo {
+    width: 5rem;
+    height: 5rem;
+  }
+  .header__disponibilidad {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 9rem;
+    margin-bottom: 0rem;
+  }
+  .header__disponibilidad .header__boton {
+    padding: 12px 12px;
+    font-size: 12px;
+    margin-right: 0;
+  }
+  .frase .main__frase {
+    display: flex;
+    font-size: 26px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  .main__suites {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-flow: column wrap;
+  }
+  .main__suites .main__tituloYLineaSuites {
+    margin-left: 8rem;
+  }
+  .main__suites .main__tituloYLineaSuites .main__lineaSuites {
+    width: 150px;
+  }
+  .main__suites .main__parrafoSuites {
+    font-size: 15px;
+    line-height: 1.5rem;
+    flex-flow: row wrap;
+    width: 60%;
+    margin-left: 8rem;
+  }
+  .main__suites .main__imagenSuites {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+    height: auto;
+    margin-left: 8rem;
+  }
+  .main__suites .main__botonDescubrirSuites {
+    margin-left: 0.5rem;
+  }
+  .main__studios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-flow: row wrap;
+    margin-right: 2rem;
+  }
+  .main__studios .main__tituloYLineaStudios .main__lineaStudios {
+    width: 150px;
+  }
+  .main__studios .main__parrafoStudios {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 15px;
+    line-height: 1.5rem;
+    flex-flow: row wrap;
+    width: 70%;
+  }
+  .main__studios .main__imagenStudios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 65%;
+    height: auto;
+    margin-left: 0;
+  }
+  .main__studios .main__botonDescubrirStudios {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .section__sobreNosotros .section__imagen {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+  .section__sobreNosotros .section__tituloSobreNosotros {
+    font-size: 26px;
+  }
+  .section__sobreNosotros .section__parrafoSobreNosotros {
+    font-size: 14px;
+  }
+  .section__spa .section__tituloSpa {
+    font-size: 32px;
+    margin-top: 2rem;
+  }
+  .section__spa .section__parrafoSpa {
+    margin-top: 0;
+    margin-left: 0;
+    width: auto;
+    font-size: 16px;
+  }
+  .section__spa .section__botonSpa--modifier {
+    margin-left: 0;
+  }
+  footer .footer__informacion {
+    justify-content: center;
+    margin-left: 10rem;
+  }
+  footer .footer__redes {
+    margin-left: 10rem;
   }
 }
 

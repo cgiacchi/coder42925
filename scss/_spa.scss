@@ -10,14 +10,14 @@
                 align-content: center;
                 height: 2px;
                 width: 30%;
-                background-color:#990f0f;
+                background-color:map-get($color,rojo);
             }
             .header__tituloSpa{
                 align-content: center;
-                font-size: 3rem;
+                font-size: map-get($font-style,tamaño-titulo);
                 padding-left:2rem;
                 padding-right: 2rem;
-                color:#990f0f;
+                color:map-get($color,rojo);
             }
             .header__lineaLargaDer{
                 display: flex;
@@ -27,7 +27,7 @@
                 flex-wrap: wrap;
                 height: 2px;
                 width: 30%;
-                background-color:#990f0f;
+                background-color:map-get($color,rojo);
             }
         }
     }
@@ -41,8 +41,8 @@
                 text-align: center;
                 margin-top:4rem;
                 margin-left: 4rem;
-                color: #990f0f;
-                font-weight: bold;
+                color: map-get($color,rojo);
+                font-weight: map-get($font-style,negrita);
                 font-size: 30px;
             }
             .main__imagenSpa1{
@@ -62,7 +62,7 @@
             }
             .main__parrafo2 {
                 @extend .main__parrafo1;
-                font-size: 21px;
+                font-size: map-get($font-style,tamaño-nav);
                 margin-top: 2rem;
             }
             .main__imagenSpa4{
@@ -70,8 +70,8 @@
             }
             .main__parrafo3{
                 @extend .main__parrafo1;
-                font-size: 16px;
-            }
+                font-size: 20px;
+                margin-top:3rem}
             .main__imagenSpa5{
                 @extend .main__imagenSpa1;
             }
@@ -131,3 +131,57 @@
             }
         }
     }
+
+    @media only screen and (min-width: 500px) and (max-width:768px) {
+    .header__portadaSpa{
+        margin-right:0;
+        margin-left:0;
+        background-position: center;
+        .header__lineaYTituloSpa{
+            .header__tituloSpa{
+                margin-left: 0;
+                font-size: 36px;
+                flex-wrap: wrap;
+            }
+            .header__lineaLargaDer{
+                margin-right: 2rem;
+            }
+        }   
+    }
+    .main__galeriaSpa{
+        .main__parrafo1{
+            font-size: 22px;
+            margin-left: 0;
+            margin-top:1rem;
+            width: 100%;            
+        }
+        .main__imagenSpa1{
+            display: none;
+        }
+        .main__imagenSpa2{
+            width: 100%;
+            height: auto;
+        }
+        .main__imagenSpa3{
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
+        .main__parrafo2{
+            font-size: 16px;
+            margin-left: 0;
+            width: 100%; 
+        }
+        .main__parrafo3{
+            font-size: 16px;
+            margin-left: 0;
+            margin-top:2rem;
+            width: 100%; 
+        }
+        .main__imagenSpa5{
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
