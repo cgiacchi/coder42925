@@ -14,7 +14,7 @@
 $color:(
 	rojo:#990f0f,
 	bordo:#640404,
-	colorclaro: white,
+	colorclaro:#fbf9f1,
 );
 
 @mixin estiloBoton{
@@ -73,4 +73,16 @@ $font-style:(
 
 @mixin animation-delay{
 	animation-delay: 5s;
+}
+
+// Variable
+$descripcionApartamentos : izquierda;
+
+.main__izquierda{
+	@if $descripcionApartamentos == izquierda{
+		background-color: map-get($color,bordo);
+	}
+	@else{
+		background-color: map-get($color,colorclaro);
+	}
 }

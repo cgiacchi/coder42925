@@ -1,5 +1,5 @@
 .header__portadaSuites{
-    background-image:url(../images/portadapagsuites.jpg);
+    background-image:url(../images/entry_lobby_4.jpeg);
     background-size: cover;
     z-index:100;
     position:sticky;
@@ -9,7 +9,7 @@
         width: 450px;
         font-size:  map-get($font-style,tamaño-titulo);
         margin-bottom: 1rem;
-        color:map-get($color,bordo);
+        color:map-get($color,rojo);
         margin-right: 0;
         margin-left: 2rem;
     }
@@ -113,7 +113,6 @@
 
 .main__izquierda{
     @extend .main__derecha;
-    background-color: map-get($color,bordo);
     .main__lineaYTituloIzquierda{
         @include flex-row-start;
         flex-wrap: wrap;
@@ -130,6 +129,7 @@
     .main__parrafoIzquierda{
         @include parrafoDescripcionDt;
         background-color: map-get($color, bordo);
+        color: map-get($color,colorclaro);
     }
     .main__iconosGeneralIzquierda{
         @extend .main__iconosGeneral;
@@ -230,7 +230,6 @@
     .main__imagenIzquierda{
         width: 100%;
         height: auto;
+        }
     }
-    
-}
 }

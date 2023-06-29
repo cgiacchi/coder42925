@@ -315,7 +315,7 @@ footer{
         text-align: center;
         font-size: 56px;
         line-height: 5rem;
-        color:rgb(255, 255, 255);
+        color:map-get($color , colorclaro);
         font-weight:  map-get($font-style,negrita);
     }
     .section__parrafoSpa{

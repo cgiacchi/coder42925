@@ -6,10 +6,10 @@
     .header__tituloStudios{
         @include flex-row-center;
         flex-wrap: nowrap;
-        width: 450px;
+        width: 470px;
         font-size:  map-get($font-style,tamaño-titulo);
         margin-bottom: 1rem;
-        color:map-get($color,bordo);
+        color:map-get($color,rojo);
         margin-right: 0;
         margin-left: 2rem;
     }
