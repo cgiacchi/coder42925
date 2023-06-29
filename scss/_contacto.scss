@@ -235,4 +235,23 @@
                 order:2;
             }
         }
+        .section__faq{
+            flex-direction: row;
+            padding:0;
+            .accordion-flush{
+                padding:0;
+            }
+        }
+        .section__frase{
+            width: 100%;
+            padding-left: 0;
+            margin-left: 1rem;
+            line-height: 2rem;
+            margin-top:1rem;
+        }
+        .section__cuerpoContactanos{
+            .section__botonContactanos{
+                padding:15px 55px;
+        }
     }
+}
