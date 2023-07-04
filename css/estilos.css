@@ -346,7 +346,7 @@
   }
 }
 .header__portadaSpa {
-  background-image: url(../images/PORTADASPA.jpg);
+  background-image: url(../images/27226718.webp);
   background-size: cover;
 }
 .header__portadaSpa .header__lineaYTituloSpa {
@@ -355,20 +355,21 @@
   justify-content: center;
   margin-left: 1rem;
   margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-bottom: 16rem;
 }
 .header__portadaSpa .header__lineaYTituloSpa .header__lineaLargaIzq {
   align-content: center;
   height: 2px;
   width: 30%;
-  background-color: #990f0f;
+  background-color: #fbf9f1;
 }
 .header__portadaSpa .header__lineaYTituloSpa .header__tituloSpa {
   align-content: center;
-  font-size: 48px;
+  font-size: 68px;
+  font-weight: 700;
   padding-left: 2rem;
   padding-right: 2rem;
-  color: #990f0f;
+  color: #fbf9f1;
 }
 .header__portadaSpa .header__lineaYTituloSpa .header__lineaLargaDer {
   display: flex;
@@ -520,9 +521,9 @@
   background-position: 10%;
 }
 .header__portadaContacto .header__tituloContacto {
-  width: 35rem;
-  font-size: 3rem;
-  margin-left: 30rem;
+  width: 70rem;
+  font-size: 68px;
+  margin-left: 20rem;
   padding-top: 15rem;
   padding-bottom: 15rem;
   color: #640404;

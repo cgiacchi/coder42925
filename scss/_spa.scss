@@ -1,23 +1,24 @@
     .header__portadaSpa{
-        background-image: url(../images/PORTADASPA.jpg);
+        background-image: url(../images/27226718.webp);
         background-size:cover;
         .header__lineaYTituloSpa{
             @include flex-row-center;
             margin-left:1rem;
             margin-top:10rem;
-            margin-bottom:10rem;
+            margin-bottom:16rem;
             .header__lineaLargaIzq{
                 align-content: center;
                 height: 2px;
                 width: 30%;
-                background-color:map-get($color,rojo);
+                background-color:map-get($color,colorclaro);
             }
             .header__tituloSpa{
                 align-content: center;
-                font-size: map-get($font-style,tamaño-titulo);
+                font-size: 68px;
+                font-weight: map-get($font-style,w700);
                 padding-left:2rem;
                 padding-right: 2rem;
-                color:map-get($color,rojo);
+                color:map-get($color,colorclaro);
             }
             .header__lineaLargaDer{
                 display: flex;
