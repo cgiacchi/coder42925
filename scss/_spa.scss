@@ -1,5 +1,5 @@
     .header__portadaSpa{
-        background-image: url(../images/27226718.webp);
+        background-image: url(../images/PORTADASPA2.jpg);
         background-size:cover;
         .header__lineaYTituloSpa{
             @include flex-row-center;
@@ -10,7 +10,7 @@
                 align-content: center;
                 height: 2px;
                 width: 30%;
-                background-color:map-get($color,colorclaro);
+                background-color:map-get($color,bordo);
             }
             .header__tituloSpa{
                 align-content: center;
@@ -18,7 +18,7 @@
                 font-weight: map-get($font-style,w700);
                 padding-left:2rem;
                 padding-right: 2rem;
-                color:map-get($color,colorclaro);
+                color:map-get($color,rojo);
             }
             .header__lineaLargaDer{
                 display: flex;

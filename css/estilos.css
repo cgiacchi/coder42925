@@ -346,7 +346,7 @@
   }
 }
 .header__portadaSpa {
-  background-image: url(../images/27226718.webp);
+  background-image: url(../images/PORTADASPA2.jpg);
   background-size: cover;
 }
 .header__portadaSpa .header__lineaYTituloSpa {
@@ -361,7 +361,7 @@
   align-content: center;
   height: 2px;
   width: 30%;
-  background-color: #fbf9f1;
+  background-color: #640404;
 }
 .header__portadaSpa .header__lineaYTituloSpa .header__tituloSpa {
   align-content: center;
@@ -369,7 +369,7 @@
   font-weight: 700;
   padding-left: 2rem;
   padding-right: 2rem;
-  color: #fbf9f1;
+  color: #990f0f;
 }
 .header__portadaSpa .header__lineaYTituloSpa .header__lineaLargaDer {
   display: flex;
