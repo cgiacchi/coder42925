@@ -1,83 +1,116 @@
-    .header__portadaSpa{
-        background-image: url(../images/PORTADASPA2.jpg);
-        background-size:cover;
-        .header__lineaYTituloSpa{
-            @include flex-row-center;
-            margin-left:1rem;
-            margin-top:10rem;
-            margin-bottom:16rem;
-            .header__lineaLargaIzq{
-                align-content: center;
-                height: 2px;
-                width: 30%;
-                background-color:map-get($color,bordo);
+.header__portadaSpa{
+    background-image: url(../images/portada__spa.png);
+    background-size:cover;
+    .header__lineaYTituloSpa{
+        @include flex-row-center;
+        margin-left:1rem;
+        margin-top:10rem;
+        margin-bottom:16rem;
+        .header__lineaLargaIzq{
+            align-content: center;
+            height: 2px;
+            width: 30%;
+            background-color:map-get($color,bordo);
             }
-            .header__tituloSpa{
-                align-content: center;
-                font-size: 68px;
-                font-weight: map-get($font-style,w700);
-                padding-left:2rem;
-                padding-right: 2rem;
-                color:map-get($color,rojo);
+        .header__tituloSpa{
+            align-content: center;
+            font-size: 72px;
+            font-weight: map-get($font-style,w700);
+            padding-left:2rem;
+            padding-right: 2rem;
+            color:map-get($color,colorclaro);
+            letter-spacing: 2px;
             }
-            .header__lineaLargaDer{
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                align-content: center;
-                flex-wrap: wrap;
-                height: 2px;
-                width: 30%;
-                background-color:map-get($color,rojo);
+        .header__lineaLargaDer{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-content: center;
+            flex-wrap: wrap;
+            height: 2px;
+            width: 30%;
+            background-color:map-get($color,rojo);
             }
         }
     }
-        .main__galeriaSpa{
-            .main__parrafo1{
-                @include flex-row-center;
-                flex-wrap: wrap;
-                align-items: center;
-                width: 500px;
-                padding: 2rem;
-                text-align: center;
-                margin-top:4rem;
-                margin-left: 4rem;
-                color: map-get($color,rojo);
-                font-weight: map-get($font-style,negrita);
-                font-size: 30px;
-            }
-            .main__imagenSpa1{
-                width: 700px;
-                height: 500px;
-                padding: 2rem;
-                border-radius: 8px;
-            }
-            .main__imagenSpa2{
-                width: 100%;
-                height:600px;
-                object-fit: cover;
-                box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.336);
-            }
-            .main__imagenSpa3{
-                @extend .main__imagenSpa1;
-            }
-            .main__parrafo2 {
-                @extend .main__parrafo1;
-                font-size: map-get($font-style,tamaño-nav);
-                margin-top: 2rem;
-            }
-            .main__imagenSpa4{
-                @extend .main__imagenSpa2;
-            }
-            .main__parrafo3{
-                @extend .main__parrafo1;
-                font-size: 20px;
-                margin-top:3rem
-            }
-            .main__imagenSpa5{
-                @extend .main__imagenSpa1;
-            }
+.main__seccionPrimera{
+    @include flex-row-start;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: map-get($color,colorclaro);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    .main__imagenSpa1{
+        background-color:map-get($color,colorclaro);
+        width: 43rem;
+    }
+    .main__titulo1{
+        @include flex-row-center;
+        margin-bottom: 1rem;
+        font-size:  28px;
+        font-weight:  map-get($font-style,w500);
+        line-height: 3rem;
+        color: map-get($color, bordo);
+        letter-spacing: 5px;
+        padding-right: 3rem;
+        padding-left:2rem;
+        text-transform: uppercase;
+        text-align: center
+    }
+    .main__parrafo1{
+        @include flex-row-center;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        font-size:  map-get($font-style,tamaño-nav);
+        line-height: 2rem;
+        padding-right:3rem;
+        padding-left:2rem;
+        color: map-get($color, bordo);
+        text-align: center;
         }
+    }
+
+.main__imagenSpa2{
+    width: 100%;
+    height:600px;
+    object-fit: cover;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.336);
+    }
+.main__seccionSegunda{
+    @extend .main__seccionPrimera;
+    background-color: map-get($color, bordo );
+    .main__imagenSpa3{
+        @extend .main__imagenSpa1;
+    }
+    .main__titulo2{
+        @extend .main__titulo1;
+        color: map-get($color, colorclaro);
+    }
+    .main__parrafo2 {
+        @extend .main__parrafo1;
+        font-size: map-get($font-style,tamaño-nav);
+        margin-top: 2rem;
+        color: map-get($color, colorclaro);
+        }
+    }   
+.main__imagenSpa4{
+    @extend .main__imagenSpa2;
+    }
+.main__seccionTercera{
+    @extend .main__seccionPrimera;
+    .main__imagenSpa5{
+        @extend .main__imagenSpa1;
+        }
+    .main__titulo3{
+        @extend .main__titulo1;
+        }
+    .main__lista {
+        @extend .main__parrafo1;
+        font-size: map-get($font-style,tamaño-nav);
+        margin-top: 2rem;
+        list-style-type:circle;
+        }
+    }          
     
 
     @media only screen and (max-width: 500px) {

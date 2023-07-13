@@ -14,7 +14,8 @@ html{
     padding:0;
 }
 body{
-    font-family: "comfortaa", Arial, Helvetica, sans-serif;
+    font-family: "Comfortaa", Arial, Helvetica, sans-serif;
+    background-color:map-get($color,colorclaro);
 }
 hr{
     opacity:100%;
@@ -39,16 +40,18 @@ a{
 }
 
 .header__nav{
+    position: static;   
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     z-index: 200;
-    font-size: map-get($font-style,tamaño-nav);
-    font-weight:  map-get($font-style,negrita);
+    font-size: 26px;
+    font-weight:900;
     list-style-type: none;
     color:map-get($color,colorclaro);
     margin-top: 10px;
+    letter-spacing: 1px;
     @include animation-delay;
     .header__logo{
         @include flex-row-center;
@@ -66,12 +69,13 @@ a{
     flex-wrap: nowrap;
     align-items: flex-end;
     text-align: center;
-    margin-bottom:7rem;
+    margin-bottom:6rem;
     margin-top:12rem;
     z-index: 100;
     .header__boton{
         @include estiloBoton;
         z-index: 100;  
+        letter-spacing: 1px;
     }
 }
 
@@ -80,13 +84,13 @@ footer{
         display:flex;  
         flex-flow:column nowrap;
         justify-content: center;
-        font-weight:  map-get($font-style,w700);
+        font-weight: map-get($font-style,w700);
         font-size: 14px;
         margin-left: 5rem;
         .footer__logo{
             width: 5rem;
             height: 5rem;
-            margin-top:2rem;
+            margin-top:1rem;
             margin-bottom:1rem;
         }
     }
@@ -116,7 +120,7 @@ footer{
         justify-content: flex-end;
         font-size:  map-get($font-style,tamaño-parrafo);
         line-height: 2rem;
-        margin-top: 8rem;
+        margin-top: 7rem;
         margin-left: 15rem;
         .footer__formulario{
             display: flex;
@@ -125,6 +129,8 @@ footer{
             .footer__input{
                 width:15rem;
                 height: 1.5rem;
+                border-radius: 8px;
+                background-color: map-get($color, colorclaro );
             }
             .footer__boton{
                 @include flex-row-center;
@@ -150,21 +156,36 @@ footer{
         }
     }
 }
+
 .frase{
-    @include flex-row-start;
+    @include flex-row-center;
     flex-wrap: wrap;
     align-items: flex-end;
     color: map-get($color,rojo);
+    margin-top: 8rem;
+    margin-bottom:4rem;
+    margin-left: 3rem;
     .animate__fadeIn{
         animation-delay:2;
         animation-name: frase-fade;
     }
+    .main__fraseHr{
+        color: map-get($color, bordo);
+        width: 1000px;
+    }
+    .main__fraseHrCorta{
+        color: map-get($color, bordo);
+        width: 700px;
+        margin-top: 0.1rem;
+        margin-bottom:0.1rem;
+    }
     .main__frase{
-        margin-top: 5rem;
-        margin-left: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        width: 760px;
         font-size:  map-get($font-style,tamaño-subtitulo);
-        font-weight:  map-get($font-style,w700);
-        color: map-get($color,rojo)
+        color: map-get($color,rojo);
+        text-align: center;
     }
 }
 .main__suites{
@@ -175,27 +196,30 @@ footer{
         align-items: flex-end;
         margin-left:6rem;
         .main__tituloSuites{
-            color: map-get($color,bordo);
-            font-weight: map-get($font-style,w500);
-            font-size:  map-get($font-style,tamaño-nav);
+            color: map-get($color,rojo);
+            font-weight: map-get($font-style,w700);
+            font-size: 22px;
+            letter-spacing: 1.5px;
         }
         .main__lineaSuites{
             height: 3.4px;
-            width: 40%;
-            margin-right:0.2rem;
-            color: map-get($color,bordo);
+            width: 25%;
+            margin-right:0.5rem;
+            color: map-get($color,rojo);
             opacity: 100%;
         }
     }
     .main__parrafoSuites{
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         color: black;
         margin-left: 5rem;
         text-align: center;
-        font-size:  map-get($font-style,tamaño-parrafo);
+        font-size: 14px;
         line-height: 1rem;
-        width: 330px;
+        width: 320px;
+        letter-spacing: 0.5px;
+        text-align: justify;
     }
     .main__imagenSuites{
         width: 20rem;
@@ -205,25 +229,20 @@ footer{
     .main__botonDescubrirSuites{
         @include flex-row-center;
         flex-wrap: wrap;
-        color: map-get($color,rojo);
+        color: map-get($color,bordo);
         padding: 15px 32px;
         text-decoration: none;
         text-align: center;
-        font-size: 14px;
+        font-size: 16px;
         border-radius: 10px;
         font-weight:  map-get($font-style,negrita);
         transition: height 1s;
-        &:hover{
-            font-size: 20px;
-            font-weight: bolder;
-        }
     }
 }
 .main__studios{
     animation-duration: 5s;
     animation-name: mainstudios-animation;
     .main__imagenStudios{
-        margin-top:2rem;
         width: 20rem;
         height:26rem;
     }
@@ -231,15 +250,17 @@ footer{
         @include flex-row-start;
         flex-wrap: wrap;
         align-items: flex-end;
+        margin-top: 5px;
         .main__tituloStudios{
             color: map-get($color,rojo );
-            font-weight:  map-get($font-style,w500);
-            font-size:  map-get($font-style,tamaño-nav);
+            font-weight:  map-get($font-style,w700);
+            font-size:  22px;
             margin-top: 0.5rem;
+            letter-spacing: 2px;
         }
         .main__lineaStudios{
             height: 1.5px;
-            width:30%;
+            width:18%;
             color:map-get($color,rojo);
             margin-left: 0.5rem;
             opacity: 100%;
@@ -249,30 +270,28 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         color: black;
-        width: 20rem;
-        text-align: center;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 0.9rem;
-        margin-bottom: 0.9rem;
+        margin-bottom: 9px;
+        margin-top:5px;
+        letter-spacing: 0.5px;
+        width: 320px;
+        text-align: justify;
     }
     .main__botonDescubrirStudios{
         @include flex-row-center;
         flex-wrap: wrap;
-        color: map-get($color,rojo);
+        color: map-get($color,bordo);
         padding: 15px 32px;
         text-decoration: none;
         text-align: center;
-        font-size: 14px;
+        font-size: 16px;
         border-radius: 10px;
         font-weight:  map-get($font-style,negrita);
         transition: height 1s;
         margin-right: 5rem;
-        &:hover{
-            font-size: 20px;
-            font-weight: bolder;
-        }
     }
 }
 
@@ -281,16 +300,20 @@ footer{
     flex-wrap: wrap;
     align-items: center;
     background-color: map-get($color,bordo);
+    margin-top: 3rem;
     .section__imagen{
         background-color:map-get($color,bordo);
         width: 40rem;
     }
     .section__tituloSobreNosotros{
         @include flex-row-center;
-        margin:1rem 2rem 0rem 4rem;
-        font-size:  map-get($font-style,tamaño-subtitulo);
+        margin-bottom: 1rem;
+        font-size:  38px;
+        font-weight:  map-get($font-style,w500);
         line-height: 3rem;
         color: map-get($color, colorclaro);
+        letter-spacing: 5px;
+        margin-right: 4rem;
     }
     .section__parrafoSobreNosotros{
         @include flex-row-center;
@@ -298,25 +321,27 @@ footer{
         align-content: flex-start;
         font-size:  map-get($font-style,tamaño-parrafo);
         line-height: 2rem;
-        padding: 0rem 3rem 0rem 4rem;
+        padding-right: 3rem;
         color: map-get($color, colorclaro);
     }
 }
 
 .section__spa{
-    background-image: url(../images/spa1.JPG);
+    background-image: url(../images/spa1.png);
     background-position: center;
     background-size: cover;
-    margin-top: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
     .section__tituloSpa{
         @include flex-row-center;
         flex-wrap: wrap;
         align-content: center;
         text-align: center;
-        font-size: 56px;
+        font-size: 54px;
         line-height: 5rem;
-        color:map-get($color , colorclaro);
+        color:map-get($color , negrita);
         font-weight:  map-get($font-style,negrita);
+        letter-spacing: 3px;
     }
     .section__parrafoSpa{
         @include flex-row-center;
@@ -329,20 +354,18 @@ footer{
         margin-left:5rem;
         color: black;
         background-color: #ffffff83;
-        padding:0.5rem;
+        padding:1.5rem;
+        border-radius: 20px;
     }
-    .section__botonSpa--modifier{
+    .section__botonSpa{
         @include flex-row-center;
         flex-wrap: wrap;
         margin-bottom: 1rem;
-        margin-left:3rem;
-        .section__botonSpa{
-            @include flex-row-center;
-            @include estiloBoton;
+        @include estiloBoton;
             flex-wrap: wrap;
             font-size: 18px;
             border-radius: 28px;
-        }
+            margin-left: 14rem;
     }
 }
 

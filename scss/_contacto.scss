@@ -1,5 +1,5 @@
 .header__portadaContacto{
-    background-image: url(../images/27226636.webp);
+    background-image: url(../images/portada_contacto.png);
     background-size: cover;
     background-position: 10%;
     .header__tituloContacto{
@@ -21,6 +21,7 @@
         justify-content: flex-end;
         align-items: flex-end;
         color: map-get($color,bordo);
+        letter-spacing: 2px;
         .main__lineaMapaSuites{
             display: flex;
             height: 2px;
@@ -77,10 +78,12 @@
         .main__lineaMapaStudios{
             @extend .main__lineaMapaSuites;
             color:map-get($color,colorclaro);
+            width: 50%
         }
         .main__tituloMapaStudios{
             @extend .main__tituloMapaSuites;
             color: map-get($color,colorclaro);
+            letter-spacing: 2px;
         }
     }
     .main__mapaStudios{
@@ -99,9 +102,10 @@
     margin-top:8rem;
     margin-left: 4rem;
     color: map-get($color,bordo);
-    font-weight: map-get($font-style,negrita);
     font-size: map-get($color,tamaño-subtitulo);
     line-height: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .section__contactanosForm{
     @include flex-row-center;
@@ -114,7 +118,7 @@
     height:450px;
     background:map-get($color,colorclaro);
     border-radius:8px;
-    box-shadow:0 0 40px -10px #000;
+    box-shadow:0 0 15px -6px #000;
     margin:calc(50vh - 220px) auto;
     padding:10px 20px;
     max-width:calc(100vw - 40px);
@@ -161,8 +165,6 @@
             letter-spacing: 1.4px;
         }
     }
-// FAQQQQQQQQQ
-
 
 .section__faq{
     display: flex;
@@ -170,6 +172,7 @@
     flex-direction: column;
     padding-left: 4rem;
     padding-right: 4rem;
+    background-color: map-get($color , colorclaro );
     .accordion-flush{
         margin-top:40px;
         display: flex;
@@ -177,6 +180,8 @@
         justify-content: center;
         padding-left: 4rem;
         padding-right: 4rem;
+        background-color: map-get($color , colorclaro );
+
         .accordion-item{
         display: flex;
         flex-direction: column;
@@ -184,6 +189,8 @@
         text-align: center;
         padding-left: 4rem;
         padding-right: 4rem;
+            background-color: map-get($color , colorclaro );
+
         }
     }
 }

@@ -1,5 +1,5 @@
 .header__portadaSuites{
-    background-image:url(../images/entry_lobby_4.jpeg);
+    background-image:url(../images/portada__suites.png);
     background-size: cover;
     z-index:100;
     position:sticky;
@@ -12,6 +12,7 @@
         color:map-get($color,colorclaro);
         margin-right: 0;
         margin-left: 2rem;
+        letter-spacing: 3px;
     }
     .header__parrafoSuites{
         display: flex;
@@ -49,6 +50,7 @@
         font-size:map-get($font-style,tamaño-nav);
         font-weight:map-get($font-style,w500);
         color: map-get($color,rojo);
+        letter-spacing: 1px;
         .main__nav{
             color: map-get($color,rojo);
         }
@@ -113,6 +115,7 @@
 
 .main__izquierda{
     @extend .main__derecha;
+    border: map-get($color,bordo);
     .main__lineaYTituloIzquierda{
         @include flex-row-start;
         flex-wrap: wrap;
@@ -130,6 +133,7 @@
         @include parrafoDescripcionDt;
         background-color: map-get($color, bordo);
         color: map-get($color,colorclaro);
+        border-color: map-get($color, colorclaro );
     }
     .main__iconosGeneralIzquierda{
         @extend .main__iconosGeneral;
