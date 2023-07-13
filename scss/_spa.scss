@@ -129,24 +129,44 @@
                 }
             }   
         }
-        .main__galeriaSpa{
+        .main__seccionPrimera{
+            .main__titulo1{
+                padding:1rem;
+            }
             .main__parrafo1{
                 font-size: 22px;
-                margin-left: 0;
-                margin-top:1rem;
+                padding-right:1rem;
+                padding-left: 1rem;
+                margin-top:0rem;
                 width: 100%;            
             }
             .main__imagenSpa1{
-                display: none;
-            }
-            .main__imagenSpa2{
                 width: 100%;
+                margin: 0;
+            }
+        }
+            .main__imagenSpa2{
+                display: none;
+                width: 80%;
                 height: auto;
+                margin-left: 12%;
+            }
+            .main__seccionSegunda{
+                .main__titulo2{
+                    padding:1rem;
+                }
+                .main__parrafo2{
+                    font-size: 22px;
+                    padding-right:1rem;
+                    padding-left: 1rem;
+                    margin-top:0rem;
+                    width: 100%;  
+                    font-weight: 300;
+                    font-size: 16px;          
+                }
             }
             .main__imagenSpa3{
-                display: flex;
-                width: 100%;
-                height: auto;
+                order:100;
             }
             .main__parrafo2{
                 font-size: 16px;
@@ -165,7 +185,6 @@
                 height: auto;
             }
         }
-    }
 
     @media only screen and (min-width: 500px) and (max-width:768px) {
     .header__portadaSpa{

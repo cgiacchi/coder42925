@@ -186,7 +186,9 @@ footer{
         font-size:  map-get($font-style,tamaño-subtitulo);
         color: map-get($color,rojo);
         text-align: center;
-    }
+    b{
+        letter-spacing: 2px;
+    }}
 }
 .main__suites{
     .main__tituloYLineaSuites{
@@ -393,11 +395,25 @@ footer{
             }
         }
     .frase{
+        margin-left: 0;
+        margin-top:3rem;
+        .main__fraseHr{
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+        }
+        .main__fraseHrCorta{
+            display: flex;
+            flex-wrap: wrap;
+            width: 70%;
+        }
         .main__frase{
             display: flex;
+            flex-wrap: wrap;
             margin-top:1rem;
             margin-left: 3rem;
             margin-right: 1rem;
+            margin-bottom: 1rem;
             font-size: 20px;
             justify-content: center;
             text-align: center;
@@ -411,7 +427,7 @@ footer{
         .main__tituloYLineaSuites{
             margin-left:3rem;
             .main__lineaSuites{
-                width: 150px;
+                width: 100px;
             }
         }
         .main__parrafoSuites{
@@ -439,7 +455,7 @@ footer{
         .main__tituloYLineaStudios{
             margin-left:0rem;
             .main__lineaStudios{
-                width: 150px;
+                width: 100px;
             }
         }
         .main__parrafoStudios{
@@ -469,15 +485,21 @@ footer{
         }
         .section__tituloSobreNosotros{
             font-size: 26px;
+            margin-left: 4.6rem;
+            text-align: center;
         }   
         .section__parrafoSobreNosotros{
             font-size: 14px;
+            margin-left: 4rem;
+            text-align: center;
         }
     }
     .section__spa{
         .section__tituloSpa{
-            font-size: 32px;
+            font-size: 40px;
             margin-top:2rem;
+            margin-left: 1rem;
+            margin-right: 1.5rem;
         }
         .section__parrafoSpa{
             margin-top: 0;
@@ -486,10 +508,26 @@ footer{
             font-size: 16px;
         }
         .section__botonSpa--modifier{
-            margin-left: 0;
+            display: flex;
+            justify-content: center;
+            .section__botonSpa{
+                margin-left: 0;
+            }
         }
     }
     footer{
+        .footer__informacion{
+            margin-left: 0rem;
+            text-align: center;
+            .footer__logo{
+                margin-left: 40%;
+            }
+        }
+        .footer__redes{
+            margin-left:0rem;
+            justify-content: center;
+            width: 100%;
+        }
         .footer__newsletter{
             margin-top:4rem;
             flex-flow: column wrap;

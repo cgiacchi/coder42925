@@ -168,21 +168,16 @@
                 width: 100%;
             }
             .header__botonSuites{
-                margin-left: 7rem;
-                margin-right: 0;
-                justify-content: center;
+                margin-left: 35%;
             }
         }   
     }
     .main__tipos{
-        visibility:hidden;
-        margin: 0;
+        display: none;
         .main__tiposNombres{
-            visibility:hidden;
-            margin: 0;
+            display: none;
             .main__nav{
-                visibility:hidden;
-                margin: 0;
+                display: none;
             }
         }
     }
@@ -193,8 +188,11 @@
             height: auto;
         }
         .main__lineaYTituloDerecha{
+            .main__lineaDerecha{
+                width: 15%;
+            }
             .main__tituloDerecha{
-                font-size: 26px;
+                font-size: 25px;
             }
         }
     }
@@ -206,8 +204,11 @@
             height: auto;
         }
         .main__lineaYTituloIzquierda{
+            .main__lineaIzquierda{
+                width: 15%;
+            }
             .main__tituloIzquierda{
-                font-size: 26px;
+                font-size: 25px;
             }
         }
     }
@@ -225,6 +226,13 @@
         width: 100%;
         height: auto;
     }
+    .main__lineaYTituloDerecha{
+        .main__lineaDerecha{
+            width: 15%;
+        }
+        .main__tituloDerecha{
+            font-size: 22px;
+        }
     }
 .main__izquierda{   
     padding-left: 0;
@@ -236,4 +244,5 @@
         height: auto;
         }
     }
+}
 }
