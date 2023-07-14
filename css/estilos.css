@@ -360,6 +360,10 @@
     justify-content: center;
   }
 }
+.row {
+  margin-right: 0;
+}
+
 .header__portadaSpa {
   background-image: url(../images/portada__spa.png);
   background-size: cover;
@@ -484,7 +488,7 @@
     padding: 1rem;
   }
   .main__seccionPrimera .main__parrafo1, .main__seccionSegunda .main__parrafo1, .main__seccionTercera .main__parrafo1, .main__seccionSegunda .main__parrafo2, .main__seccionTercera .main__lista {
-    font-size: 22px;
+    font-size: 20px;
     padding-right: 1rem;
     padding-left: 1rem;
     margin-top: 0rem;
@@ -500,6 +504,9 @@
     height: auto;
     margin-left: 12%;
   }
+  .main__seccionSegunda .main__imagenSpa3 {
+    order: 100;
+  }
   .main__seccionSegunda .main__titulo2 {
     padding: 1rem;
   }
@@ -512,24 +519,12 @@
     font-weight: 300;
     font-size: 16px;
   }
-  .main__imagenSpa3 {
-    order: 100;
-  }
-  .main__parrafo2 {
-    font-size: 16px;
-    margin-left: 0;
-    width: 100%;
-  }
-  .main__parrafo3 {
-    font-size: 16px;
-    margin-left: 0;
-    margin-top: 2rem;
-    width: 100%;
-  }
-  .main__imagenSpa5 {
+  .main__imagenSpa4 {
     display: flex;
-    width: 100%;
-    height: auto;
+  }
+  .main__seccionTercera .main__lista {
+    font-size: 16px;
+    list-style-type: none;
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 768px) {
