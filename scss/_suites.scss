@@ -182,6 +182,7 @@
         }
     }
     .main__derecha{
+        margin-left: 7px;
         padding: 1rem;
         .main__imagenDerecha{
             width: 100%;
@@ -199,6 +200,7 @@
     .main__izquierda{
         padding: 1rem;
         padding-bottom: 3rem;
+        margin-left: 7px;
         .main__imagenIzquierda{
             width: 100%;
             height: auto;
@@ -222,11 +224,12 @@
 }
     .main__derecha{
     padding-left: 0;
+    margin-left: 8px;
     .main__parrafoDerecha{
         margin-left: 5%;
     }
     .main__imagenDerecha{
-        width: 105%;
+        width: 100%;
         height: auto;
     }
     .main__lineaYTituloDerecha{

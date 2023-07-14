@@ -232,6 +232,7 @@
     display: none;
   }
   .main__derecha, .main__izquierda {
+    margin-left: 7px;
     padding: 1rem;
   }
   .main__derecha .main__imagenDerecha, .main__izquierda .main__imagenDerecha {
@@ -247,6 +248,7 @@
   .main__izquierda {
     padding: 1rem;
     padding-bottom: 3rem;
+    margin-left: 7px;
   }
   .main__izquierda .main__imagenIzquierda {
     width: 100%;
@@ -265,12 +267,13 @@
   }
   .main__derecha, .main__izquierda {
     padding-left: 0;
+    margin-left: 8px;
   }
   .main__derecha .main__parrafoDerecha, .main__izquierda .main__parrafoDerecha {
     margin-left: 5%;
   }
   .main__derecha .main__imagenDerecha, .main__izquierda .main__imagenDerecha {
-    width: 105%;
+    width: 100%;
     height: auto;
   }
   .main__derecha .main__lineaYTituloDerecha .main__lineaDerecha, .main__izquierda .main__lineaYTituloDerecha .main__lineaDerecha {
@@ -498,17 +501,14 @@
     width: 100%;
   }
   .main__seccionPrimera .main__imagenSpa1, .main__seccionSegunda .main__imagenSpa1, .main__seccionTercera .main__imagenSpa1, .main__seccionSegunda .main__imagenSpa3, .main__seccionTercera .main__imagenSpa5 {
-    width: 100%;
+    width: 105%;
     margin: 0;
   }
   .main__imagenSpa2, .main__imagenSpa4 {
     display: none;
-    width: 80%;
-    height: auto;
-    margin-left: 12%;
   }
   .main__seccionSegunda .main__imagenSpa3 {
-    order: 100;
+    width: 105%;
   }
   .main__seccionSegunda .main__titulo2 {
     padding: 1rem;
@@ -884,6 +884,7 @@
   }
   .section__contactanos {
     margin-top: 1rem;
+    margin-bottom: 2rem;
   }
   .section__contactanos .section__cuerpoContactanos {
     margin-top: 1rem;
@@ -962,6 +963,7 @@
   }
   .section__contactanos {
     margin-top: 1rem;
+    margin-bottom: 2rem;
   }
   .section__contactanos .section__cuerpoContactanos {
     margin-top: 1rem;
@@ -990,6 +992,11 @@ hr {
 
 a {
   text-decoration: none;
+}
+
+strong {
+  padding-left: 6px;
+  font-size: 17px;
 }
 
 .container-fluid {
@@ -1404,7 +1411,7 @@ footer .footer__wsp .footer__wspImagen {
   }
   .header__disponibilidad .header__boton {
     padding: 10px 12px;
-    font-size: 9px;
+    font-size: 7px;
     margin-right: 0;
   }
   .frase {
@@ -1501,7 +1508,7 @@ footer .footer__wsp .footer__wspImagen {
   .section__sobreNosotros .section__imagen {
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
+    width: 105%;
   }
   .section__sobreNosotros .section__tituloSobreNosotros {
     font-size: 26px;
@@ -1510,7 +1517,7 @@ footer .footer__wsp .footer__wspImagen {
   }
   .section__sobreNosotros .section__parrafoSobreNosotros {
     font-size: 14px;
-    margin-left: 4rem;
+    margin-left: 2rem;
     text-align: center;
   }
   .section__spa .section__tituloSpa {
@@ -1549,6 +1556,7 @@ footer .footer__wsp .footer__wspImagen {
     flex-flow: column wrap;
     justify-content: center;
     margin-left: 0;
+    margin-bottom: 2rem;
   }
   footer .footer__newsletter .footer__formulario {
     justify-content: center;
@@ -1584,7 +1592,7 @@ footer .footer__wsp .footer__wspImagen {
   }
   .frase {
     margin-left: 0;
-    margin-top: 0rem;
+    margin-top: 2rem;
   }
   .frase .main__fraseHr {
     display: flex;

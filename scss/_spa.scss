@@ -144,19 +144,16 @@
                 width: 100%;            
             }
             .main__imagenSpa1{
-                width: 100%;
+                width: 105%;
                 margin: 0;
             }
         }
-            .main__imagenSpa2{
-                display: none;
-                width: 80%;
-                height: auto;
-                margin-left: 12%;
+        .main__imagenSpa2{
+            display: none;
             }
             .main__seccionSegunda{
                 .main__imagenSpa3{
-                    order:100;
+                    width: 105%;
                 }
                 .main__titulo2{
                     padding:1rem;
@@ -176,10 +173,10 @@
             }
             .main__seccionTercera{
                 .main__lista{
-                    font-size: 16px;
-                    list-style-type: none;
-                }
-            } 
+                font-size: 16px;
+                list-style-type: none;
+            }
+        } 
     }
 
     @media only screen and (min-width: 500px) and (max-width:768px) {
@@ -214,43 +211,43 @@
             margin: 0;
         }
     }
-        .main__imagenSpa2{
-            display: none;
-            width: 60%;
-            height: auto;
-            margin-left: 5%;
+    .main__imagenSpa2{
+        display: none;
+        width: 60%;
+        height: auto;
+        margin-left: 5%;
+    }
+    .main__seccionSegunda{
+        .main__imagenSpa3{
+            order:100;
+            width: 105%;
         }
-        .main__seccionSegunda{
-            .main__imagenSpa3{
-                order:100;
-                width: 105%;
-            }
-            .main__titulo2{
-                padding:1rem;
-            }
-            .main__parrafo2{
-                font-size: 22px;
-                padding-right:1rem;
-                padding-left: 1rem;
-                margin-top:0rem;
-                width: 100%;  
-                font-weight: 300;
-                font-size: 16px;          
-            }
+        .main__titulo2{
+            padding:1rem;
         }
-        .main__imagenSpa4{
+        .main__parrafo2{
+            font-size: 22px;
+            padding-right:1rem;
+            padding-left: 1rem;
+            margin-top:0rem;
+            width: 100%;  
+            font-weight: 300;
+            font-size: 16px;          
+        }
+    }
+    .main__imagenSpa4{
+        display: flex;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .main__seccionTercera{
+        .main__lista{
             display: flex;
-            width: 80%;
-            margin-left: 10%;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            font-size: 16px;
+            list-style-type: none;
         }
-        .main__seccionTercera{
-            .main__lista{
-                display: flex;
-                flex-direction: column;
-                flex-wrap: nowrap;
-                font-size: 16px;
-                list-style-type: none;
-            }
-        } 
+    } 
 }
 
