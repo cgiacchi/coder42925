@@ -222,8 +222,11 @@
 }
     .main__derecha{
     padding-left: 0;
+    .main__parrafoDerecha{
+        margin-left: 5%;
+    }
     .main__imagenDerecha{
-        width: 100%;
+        width: 105%;
         height: auto;
     }
     .main__lineaYTituloDerecha{
@@ -234,15 +237,15 @@
             font-size: 22px;
         }
     }
+}
 .main__izquierda{   
     padding-left: 0;
     .main__parrafoIzquierda{
-        margin-left:1rem;
+        margin-left:5%;
     }
     .main__imagenIzquierda{
-        width: 100%;
+        width: 105%;
         height: auto;
         }
     }
-}
 }

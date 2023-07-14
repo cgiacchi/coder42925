@@ -188,7 +188,8 @@ footer{
         text-align: center;
     b{
         letter-spacing: 2px;
-    }}
+        }
+    }
 }
 .main__suites{
     .main__tituloYLineaSuites{
@@ -569,13 +570,31 @@ footer{
             }
         }
     .frase{
+        margin-left: 0;
+        margin-top:0rem;
+        .main__fraseHr{
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+        }
+        .main__fraseHrCorta{
+            display: flex;
+            flex-wrap: wrap;
+            width: 70%;
+        }
         .main__frase{
             display: flex;
+            flex-wrap: wrap;
             font-size: 26px;
             justify-content: center;
             text-align: center;
-            margin-top:2rem;
+            margin-top:1rem;
             margin-left: 1rem;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+        b{
+            margin-left: 10px;
+            }
         }
     }
     .main__suites{
@@ -592,13 +611,13 @@ footer{
             font-size: 15px;
             line-height: 1.5rem;
             flex-flow:row wrap;
-            width: 60%;
+            width: 70%;
             margin-left: 8rem;
         }
         .main__imagenSuites{
             @include flex-row-center;
             flex-wrap: wrap;
-            width: 60%;
+            width: 65%;
             height: auto;
             margin-left:8rem;
 
@@ -641,13 +660,17 @@ footer{
         .section__imagen{
             display: flex;
             flex-flow: row wrap;
-            width: 100%;
+            width: 105%;
         }
         .section__tituloSobreNosotros{
             font-size: 26px;
+            margin-left: 15%;
+            text-align: center;
         }   
         .section__parrafoSobreNosotros{
             font-size: 14px;
+            margin-left: 15%;
+            text-align: center;
         }
     }
     .section__spa{
@@ -662,16 +685,37 @@ footer{
             font-size: 16px;
         }
         .section__botonSpa--modifier{
-            margin-left: 0;
+            display: flex;
+            justify-content: center;
+            .section__botonSpa{
+                margin-left: 0;
+            }
         }
     }
     footer{
         .footer__informacion{
-            justify-content: center;
-            margin-left: 10rem;
+            margin-left: 0rem;
+            text-align: center;
+            .footer__logo{
+                margin-left: 40%;
+            }
         }
         .footer__redes{
-            margin-left: 10rem;
+            margin-left:0rem;
+            justify-content: center;
+            width: 100%;
         }
-    }  
+        .footer__newsletter{
+            margin-top:4rem;
+            flex-flow: column wrap;
+            justify-content: center;
+            margin-left:0;
+            .footer__formulario{
+                justify-content: center;
+                .footer__boton{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
 }

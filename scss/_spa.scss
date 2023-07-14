@@ -198,40 +198,59 @@
             }
         }   
     }
-    .main__galeriaSpa{
+    .main__seccionPrimera{
+        .main__titulo1{
+            padding:1rem;
+        }
         .main__parrafo1{
-            font-size: 22px;
-            margin-left: 0;
-            margin-top:1rem;
+            font-size: 20px;
+            padding-right:1rem;
+            padding-left: 1rem;
+            margin-top:0rem;
             width: 100%;            
         }
         .main__imagenSpa1{
-            display: none;
-        }
-        .main__imagenSpa2{
-            width: 100%;
-            height: auto;
-        }
-        .main__imagenSpa3{
-            display: flex;
-            width: 100%;
-            height: auto;
-        }
-        .main__parrafo2{
-            font-size: 16px;
-            margin-left: 0;
-            width: 100%; 
-        }
-        .main__parrafo3{
-            font-size: 16px;
-            margin-left: 0;
-            margin-top:2rem;
-            width: 100%; 
-        }
-        .main__imagenSpa5{
-            display: flex;
-            width: 100%;
-            height: auto;
+            width: 105%;
+            margin: 0;
         }
     }
+        .main__imagenSpa2{
+            display: none;
+            width: 60%;
+            height: auto;
+            margin-left: 5%;
+        }
+        .main__seccionSegunda{
+            .main__imagenSpa3{
+                order:100;
+                width: 105%;
+            }
+            .main__titulo2{
+                padding:1rem;
+            }
+            .main__parrafo2{
+                font-size: 22px;
+                padding-right:1rem;
+                padding-left: 1rem;
+                margin-top:0rem;
+                width: 100%;  
+                font-weight: 300;
+                font-size: 16px;          
+            }
+        }
+        .main__imagenSpa4{
+            display: flex;
+            width: 80%;
+            margin-left: 10%;
+        }
+        .main__seccionTercera{
+            .main__lista{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                font-size: 16px;
+                list-style-type: none;
+            }
+        } 
 }
+

@@ -11,7 +11,6 @@
         color: map-get($color,bordo);
     }
 }
-
 .main__seccionMapaSuites{
     display: flex;
     .main__lineaYTituloMapaSuites{
@@ -73,17 +72,25 @@
         padding: 1.5rem;
     }
     .main__lineaYTituloMapaStudios{
-        @extend .main__lineaYTituloMapaSuites;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        flex-flow: nowrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+        color: map-get($color,bordo);
+        letter-spacing: 2px;
+        margin-top: 1rem;
         .main__lineaMapaStudios{
             @extend .main__lineaMapaSuites;
             color:map-get($color,colorclaro);
-            width: 50%
+            width: 60%;
         }
         .main__tituloMapaStudios{
             @extend .main__tituloMapaSuites;
             color: map-get($color,colorclaro);
             letter-spacing: 2px;
+            display: flex;
+            flex-wrap: wrap;
         }
     }
     .main__mapaStudios{
@@ -181,7 +188,6 @@
         padding-left: 4rem;
         padding-right: 4rem;
         background-color: map-get($color , colorclaro );
-
         .accordion-item{
         display: flex;
         flex-direction: column;
@@ -189,8 +195,11 @@
         text-align: center;
         padding-left: 4rem;
         padding-right: 4rem;
+        background-color: map-get($color , colorclaro );
+        .accordion-button{
             background-color: map-get($color , colorclaro );
-
+            color:#640404;
+            }    
         }
     }
 }
@@ -202,9 +211,12 @@
         background-position: center;
             .header__tituloContacto{
                 display: flex;
-                margin-left: 0;
+                width: 70%;
+                margin-left: 20%;
                 font-size: 36px;
                 flex-wrap: wrap;
+                padding-top: 5rem;
+                padding-bottom: 5rem;
             }
             
         }   
@@ -224,24 +236,39 @@
             }
         }
         .main__seccionMapaStudios{
-            display: flex;
+            display: block;
             flex-direction: row;
             flex-wrap: wrap;
+            margin:0;
             .main__mapaStudios{
-                display: flex;
                 width: 80%;
                 margin-left: 2rem;
                 margin-right: 0;
-                order:1;
             }
             .main__parrafoMapaStudios{
                 display: flex;
                 margin-top: 0;
                 margin-left: 2rem;
                 margin-right: 0;
+                width: 80%;
                 order:2;
             }
+        .main__lineaYTituloMapaStudios{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            .main__lineaMapaStudios{
+                display: flex;
+                flex-wrap: wrap;
+                width: 60%;
+            }
+            .main__tituloMapaStudios{
+                display: flex;
+                flex-wrap: nowrap;
+                font-size: 2rem;
+            }
         }
+    }
         .section__faq{
             flex-direction: row;
             padding:0;
@@ -256,9 +283,93 @@
             line-height: 2rem;
             margin-top:1rem;
         }
+        .section__contactanos{
+            margin-top:1rem;
         .section__cuerpoContactanos{
+            margin-top:1rem;
             .section__botonContactanos{
                 padding:15px 55px;
+            }
         }
     }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 768px){
+    .header__portadaContacto{
+        margin-right:0;
+        margin-left:0;
+        background-position: center;
+            .header__tituloContacto{
+                display: flex;
+                width: 70%;
+                margin-left: 20%;
+                font-size: 48px;
+                flex-wrap: wrap;
+                padding-top: 5rem;
+                padding-bottom: 5rem;
+            }
+            
+        }   
+        .main__seccionMapaSuites{
+            display: block;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .main__mapaSuites{
+                width: 80%;
+                margin-left: 2rem;
+                margin-right: 0;
+            }
+            .main__parrafoMapaSuites{
+                margin-top: 0;
+                margin-left: 2rem;
+                margin-right: 0;
+            }
+        }
+        .main__seccionMapaStudios{
+            display: block;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .main__mapaStudios{
+                display: flex;
+                flex-wrap: wrap;
+                width: 80%;
+                margin-left: 2rem;
+                margin-right: 0;
+            }
+            .main__parrafoMapaStudios{
+                display: flex;
+                margin-top: 0;
+                margin-left: 2rem;
+                margin-right: 0;
+                width: 80%;
+                order:2;
+            }
+        .main__lineaYTituloMapaStudios{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            .main__lineaMapaStudios{
+                display: flex;
+                flex-wrap: wrap;
+                width: 60%;            }
+            .main__tituloMapaStudios{
+                display: flex;
+                flex-wrap: nowrap;
+                font-size: 2rem;
+                
+            }
+        }
+    }
+    .section__frase{
+        margin-top:1rem;
+    }
+    .section__contactanos{
+        margin-top:1rem;
+    .section__cuerpoContactanos{
+        margin-top:1rem;
+        .section__botonContactanos{
+            padding:15px 55px;
+        }
+    }
+}
 }

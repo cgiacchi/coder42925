@@ -266,8 +266,11 @@
   .main__derecha, .main__izquierda {
     padding-left: 0;
   }
+  .main__derecha .main__parrafoDerecha, .main__izquierda .main__parrafoDerecha {
+    margin-left: 5%;
+  }
   .main__derecha .main__imagenDerecha, .main__izquierda .main__imagenDerecha {
-    width: 100%;
+    width: 105%;
     height: auto;
   }
   .main__derecha .main__lineaYTituloDerecha .main__lineaDerecha, .main__izquierda .main__lineaYTituloDerecha .main__lineaDerecha {
@@ -276,14 +279,14 @@
   .main__derecha .main__lineaYTituloDerecha .main__tituloDerecha, .main__izquierda .main__lineaYTituloDerecha .main__tituloDerecha {
     font-size: 22px;
   }
-  .main__derecha .main__izquierda, .main__izquierda .main__izquierda {
+  .main__izquierda {
     padding-left: 0;
   }
-  .main__derecha .main__izquierda .main__parrafoIzquierda, .main__izquierda .main__izquierda .main__parrafoIzquierda {
-    margin-left: 1rem;
+  .main__izquierda .main__parrafoIzquierda {
+    margin-left: 5%;
   }
-  .main__derecha .main__izquierda .main__imagenIzquierda, .main__izquierda .main__izquierda .main__imagenIzquierda {
-    width: 100%;
+  .main__izquierda .main__imagenIzquierda {
+    width: 105%;
     height: auto;
   }
 }
@@ -541,39 +544,53 @@
   .header__portadaSpa .header__lineaYTituloSpa .header__lineaLargaDer {
     margin-right: 2rem;
   }
-  .main__galeriaSpa .main__parrafo1, .main__galeriaSpa .main__seccionSegunda .main__parrafo2, .main__seccionSegunda .main__galeriaSpa .main__parrafo2, .main__galeriaSpa .main__seccionTercera .main__lista, .main__seccionTercera .main__galeriaSpa .main__lista {
-    font-size: 22px;
-    margin-left: 0;
-    margin-top: 1rem;
+  .main__seccionPrimera .main__titulo1, .main__seccionSegunda .main__titulo1, .main__seccionTercera .main__titulo1, .main__seccionSegunda .main__titulo2, .main__seccionTercera .main__titulo3 {
+    padding: 1rem;
+  }
+  .main__seccionPrimera .main__parrafo1, .main__seccionSegunda .main__parrafo1, .main__seccionTercera .main__parrafo1, .main__seccionSegunda .main__parrafo2, .main__seccionTercera .main__lista {
+    font-size: 20px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-top: 0rem;
     width: 100%;
   }
-  .main__galeriaSpa .main__imagenSpa1, .main__galeriaSpa .main__seccionSegunda .main__imagenSpa3, .main__seccionSegunda .main__galeriaSpa .main__imagenSpa3, .main__galeriaSpa .main__seccionTercera .main__imagenSpa5, .main__seccionTercera .main__galeriaSpa .main__imagenSpa5 {
+  .main__seccionPrimera .main__imagenSpa1, .main__seccionSegunda .main__imagenSpa1, .main__seccionTercera .main__imagenSpa1, .main__seccionSegunda .main__imagenSpa3, .main__seccionTercera .main__imagenSpa5 {
+    width: 105%;
+    margin: 0;
+  }
+  .main__imagenSpa2, .main__imagenSpa4 {
     display: none;
-  }
-  .main__galeriaSpa .main__imagenSpa2, .main__galeriaSpa .main__imagenSpa4 {
-    width: 100%;
+    width: 60%;
     height: auto;
+    margin-left: 5%;
   }
-  .main__galeriaSpa .main__imagenSpa3 {
-    display: flex;
+  .main__seccionSegunda .main__imagenSpa3 {
+    order: 100;
+    width: 105%;
+  }
+  .main__seccionSegunda .main__titulo2 {
+    padding: 1rem;
+  }
+  .main__seccionSegunda .main__parrafo2 {
+    font-size: 22px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-top: 0rem;
     width: 100%;
-    height: auto;
-  }
-  .main__galeriaSpa .main__parrafo2 {
+    font-weight: 300;
     font-size: 16px;
-    margin-left: 0;
-    width: 100%;
   }
-  .main__galeriaSpa .main__parrafo3 {
-    font-size: 16px;
-    margin-left: 0;
-    margin-top: 2rem;
-    width: 100%;
-  }
-  .main__galeriaSpa .main__imagenSpa5 {
+  .main__imagenSpa4 {
     display: flex;
-    width: 100%;
-    height: auto;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .main__seccionTercera .main__lista {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 16px;
+    list-style-type: none;
   }
 }
 .header__portadaContacto {
@@ -593,7 +610,7 @@
 .main__seccionMapaSuites {
   display: flex;
 }
-.main__seccionMapaSuites .main__lineaYTituloMapaSuites, .main__seccionMapaSuites .main__seccionMapaStudios .main__lineaYTituloMapaStudios, .main__seccionMapaStudios .main__seccionMapaSuites .main__lineaYTituloMapaStudios {
+.main__seccionMapaSuites .main__lineaYTituloMapaSuites {
   display: flex;
   flex-direction: column;
   flex-flow: nowrap;
@@ -602,13 +619,13 @@
   color: #640404;
   letter-spacing: 2px;
 }
-.main__seccionMapaSuites .main__lineaYTituloMapaSuites .main__lineaMapaSuites, .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__seccionMapaSuites .main__lineaYTituloMapaSuites .main__lineaMapaStudios, .main__seccionMapaSuites .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__lineaMapaSuites, .main__seccionMapaSuites .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__lineaMapaStudios, .main__seccionMapaStudios .main__seccionMapaSuites .main__lineaYTituloMapaStudios .main__lineaMapaSuites, .main__seccionMapaStudios .main__seccionMapaSuites .main__lineaYTituloMapaStudios .main__lineaMapaStudios {
+.main__seccionMapaSuites .main__lineaYTituloMapaSuites .main__lineaMapaSuites, .main__seccionMapaSuites .main__lineaYTituloMapaSuites .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__lineaMapaStudios, .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__seccionMapaSuites .main__lineaYTituloMapaSuites .main__lineaMapaStudios {
   display: flex;
   height: 2px;
   width: 60%;
   margin-top: 0.5rem;
 }
-.main__seccionMapaSuites .main__lineaYTituloMapaSuites .main__tituloMapaSuites, .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__seccionMapaSuites .main__lineaYTituloMapaSuites .main__tituloMapaStudios, .main__seccionMapaSuites .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__tituloMapaSuites, .main__seccionMapaSuites .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__tituloMapaStudios, .main__seccionMapaStudios .main__seccionMapaSuites .main__lineaYTituloMapaStudios .main__tituloMapaSuites, .main__seccionMapaStudios .main__seccionMapaSuites .main__lineaYTituloMapaStudios .main__tituloMapaStudios {
+.main__seccionMapaSuites .main__lineaYTituloMapaSuites .main__tituloMapaSuites, .main__seccionMapaSuites .main__lineaYTituloMapaSuites .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__tituloMapaStudios, .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__seccionMapaSuites .main__lineaYTituloMapaSuites .main__tituloMapaStudios {
   display: flex;
   align-items: flex-start;
   font-size: 2rem;
@@ -654,15 +671,24 @@
   padding: 1.5rem;
 }
 .main__seccionMapaStudios .main__lineaYTituloMapaStudios {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-flow: nowrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: #640404;
+  letter-spacing: 2px;
+  margin-top: 1rem;
 }
 .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__lineaMapaStudios {
   color: #faf7f2;
-  width: 50%;
+  width: 60%;
 }
 .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__tituloMapaStudios {
   color: #faf7f2;
   letter-spacing: 2px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .main__seccionMapaStudios .main__mapaStudios {
   padding: 1rem;
@@ -773,6 +799,10 @@
   padding-right: 4rem;
   background-color: #faf7f2;
 }
+.section__faq .accordion-flush .accordion-item .accordion-button {
+  background-color: #faf7f2;
+  color: #640404;
+}
 
 @media only screen and (max-width: 500px) {
   .header__portadaContacto {
@@ -782,9 +812,12 @@
   }
   .header__portadaContacto .header__tituloContacto {
     display: flex;
-    margin-left: 0;
+    width: 70%;
+    margin-left: 20%;
     font-size: 36px;
     flex-wrap: wrap;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   .main__seccionMapaSuites {
     display: block;
@@ -802,23 +835,38 @@
     margin-right: 0;
   }
   .main__seccionMapaStudios {
-    display: flex;
+    display: block;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0;
   }
   .main__seccionMapaStudios .main__mapaStudios {
-    display: flex;
     width: 80%;
     margin-left: 2rem;
     margin-right: 0;
-    order: 1;
   }
   .main__seccionMapaStudios .main__parrafoMapaStudios {
     display: flex;
     margin-top: 0;
     margin-left: 2rem;
     margin-right: 0;
+    width: 80%;
     order: 2;
+  }
+  .main__seccionMapaStudios .main__lineaYTituloMapaStudios {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__lineaMapaStudios {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+  .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__tituloMapaStudios {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 2rem;
   }
   .section__faq {
     flex-direction: row;
@@ -834,7 +882,91 @@
     line-height: 2rem;
     margin-top: 1rem;
   }
-  .section__cuerpoContactanos .section__botonContactanos {
+  .section__contactanos {
+    margin-top: 1rem;
+  }
+  .section__contactanos .section__cuerpoContactanos {
+    margin-top: 1rem;
+  }
+  .section__contactanos .section__cuerpoContactanos .section__botonContactanos {
+    padding: 15px 55px;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+  .header__portadaContacto {
+    margin-right: 0;
+    margin-left: 0;
+    background-position: center;
+  }
+  .header__portadaContacto .header__tituloContacto {
+    display: flex;
+    width: 70%;
+    margin-left: 20%;
+    font-size: 48px;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  .main__seccionMapaSuites {
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .main__seccionMapaSuites .main__mapaSuites {
+    width: 80%;
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+  .main__seccionMapaSuites .main__parrafoMapaSuites {
+    margin-top: 0;
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+  .main__seccionMapaStudios {
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .main__seccionMapaStudios .main__mapaStudios {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+  .main__seccionMapaStudios .main__parrafoMapaStudios {
+    display: flex;
+    margin-top: 0;
+    margin-left: 2rem;
+    margin-right: 0;
+    width: 80%;
+    order: 2;
+  }
+  .main__seccionMapaStudios .main__lineaYTituloMapaStudios {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__lineaMapaStudios {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+  .main__seccionMapaStudios .main__lineaYTituloMapaStudios .main__tituloMapaStudios {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 2rem;
+  }
+  .section__frase {
+    margin-top: 1rem;
+  }
+  .section__contactanos {
+    margin-top: 1rem;
+  }
+  .section__contactanos .section__cuerpoContactanos {
+    margin-top: 1rem;
+  }
+  .section__contactanos .section__cuerpoContactanos .section__botonContactanos {
     padding: 15px 55px;
   }
 }
@@ -1450,13 +1582,33 @@ footer .footer__wsp .footer__wspImagen {
     font-size: 12px;
     margin-right: 0;
   }
+  .frase {
+    margin-left: 0;
+    margin-top: 0rem;
+  }
+  .frase .main__fraseHr {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  .frase .main__fraseHrCorta {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+  }
   .frase .main__frase {
     display: flex;
+    flex-wrap: wrap;
     font-size: 26px;
     justify-content: center;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  .frase .main__frase b {
+    margin-left: 10px;
   }
   .main__suites {
     display: flex;
@@ -1475,7 +1627,7 @@ footer .footer__wsp .footer__wspImagen {
     font-size: 15px;
     line-height: 1.5rem;
     flex-flow: row wrap;
-    width: 60%;
+    width: 70%;
     margin-left: 8rem;
   }
   .main__suites .main__imagenSuites {
@@ -1483,7 +1635,7 @@ footer .footer__wsp .footer__wspImagen {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: 60%;
+    width: 65%;
     height: auto;
     margin-left: 8rem;
   }
@@ -1525,13 +1677,17 @@ footer .footer__wsp .footer__wspImagen {
   .section__sobreNosotros .section__imagen {
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
+    width: 105%;
   }
   .section__sobreNosotros .section__tituloSobreNosotros {
     font-size: 26px;
+    margin-left: 15%;
+    text-align: center;
   }
   .section__sobreNosotros .section__parrafoSobreNosotros {
     font-size: 14px;
+    margin-left: 15%;
+    text-align: center;
   }
   .section__spa .section__tituloSpa {
     font-size: 32px;
@@ -1544,14 +1700,35 @@ footer .footer__wsp .footer__wspImagen {
     font-size: 16px;
   }
   .section__spa .section__botonSpa--modifier {
+    display: flex;
+    justify-content: center;
+  }
+  .section__spa .section__botonSpa--modifier .section__botonSpa {
     margin-left: 0;
   }
   footer .footer__informacion {
-    justify-content: center;
-    margin-left: 10rem;
+    margin-left: 0rem;
+    text-align: center;
+  }
+  footer .footer__informacion .footer__logo {
+    margin-left: 40%;
   }
   footer .footer__redes {
-    margin-left: 10rem;
+    margin-left: 0rem;
+    justify-content: center;
+    width: 100%;
+  }
+  footer .footer__newsletter {
+    margin-top: 4rem;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-left: 0;
+  }
+  footer .footer__newsletter .footer__formulario {
+    justify-content: center;
+  }
+  footer .footer__newsletter .footer__formulario .footer__boton {
+    margin-right: 0;
   }
 }
 
