@@ -1736,3 +1736,107 @@ footer .footer__wsp .footer__wspImagen {
 }
 
 /*# sourceMappingURL=estilos.css.map */
+.header__portadaCarrito {
+  background-size: cover;
+  z-index: 100;
+  position: sticky;
+}
+.header__portadaCarrito .header__tituloCarrito {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 700px;
+  font-size: 48px;
+  margin-bottom: 1rem;
+  color: black;
+  margin-right: 0;
+  margin-left: 22rem;
+  letter-spacing: 3px;
+}
+.header__portadaCarrito .header__parrafoCarrito {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  font-size: 16px;
+  width: 400px;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-left: 30rem;
+  margin-top: 1rem;
+  background-color: rgba(49, 27, 27, 0.431372549);
+  color: #faf7f2;
+}
+.header__portadaCarrito .header__botonCarrito {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #640404;
+  border: 2px solid;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 28px;
+  flex-wrap: nowrap;
+  background-color: #640404;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 38rem;
+}
+
+.header__navCarrito {
+  position: static;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  z-index: 200;
+  font-size: 26px;
+  font-weight: 900;
+  list-style-type: none;
+  color: black;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  animation-delay: 5s;
+}
+.header__navCarrito .header__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  margin-left: 0rem;
+  z-index: 200;
+}
+
+.estiloParrafo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 700px;
+  margin-left: 21rem;
+  margin-right: 5rem;
+  margin-top: 3rem;
+}
+.btn-reservar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 200px;
+  margin-left: 37rem;
+  margin-right: 5rem;
+  margin-top: 3rem;
+}
+
+.btn-danger, .btn-success{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 200px;
+  margin-left: 37rem;
+  margin-right: 5rem;
+  margin-top: 3rem;
+}
