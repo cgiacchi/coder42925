@@ -8,6 +8,7 @@ class Departamento {
   }
 }
 
+//arrays
 let edificioSuites = [];
 let edificioStudios = [];
 
